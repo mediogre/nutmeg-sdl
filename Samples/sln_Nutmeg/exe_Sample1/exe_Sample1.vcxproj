@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5308C3B3-B20F-440D-B81B-CEF4C624291B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>exe_Sample1</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\Engine\CoreSrc\Common;..\..\..\Samples\CBTemplate\Source;..\..\..\Engine\CoreSrc\Engine;..\..\..\Engine\CoreSrc\Math;..\..\..\Engine\CoreSrc\Render;..\..\..\Engine\CoreSrc\Audio;..\..\..\Engine\CoreSrc\Scene;..\..\..\Engine\CoreSrc\Physics;..\..\..\Engine\CoreSrc\Physics\Tokamak;..\..\..\Engine\CoreSrc\Physics\Tokamak\math;..\..\..\Engine\Library\Newton;..\..\..\Engine\Library\OpenGL;..\..\..\Engine\Library\DevIL;..\..\..\Engine\CoreSrc\Platform;..\..\..\Engine\CoreSrc;..\..\..\Engine\CoreSrc\Game;..\..\..\Engine\Subsystems\Platform;..\..\..\Engine\Subsystems\Audio;..\..\..\Engine\Library\Squall</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);S:\code\n\nutengine\vs2008\newton.lib;S:\code\n\nutengine\vs2008\DevIL.lib;S:\code\n\nutengine\vs2008\ILUT.lib;S:\code\n\nutengine\vs2008\ILU.lib;S:\code\n\nutengine\vs2008\Squall.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Audio\AbstractAudio.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Common\Debug.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Common\File.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Common\Log.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Common\Resource.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Common\Str.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Common\Xml.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Engine\Application.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Engine\Console.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Engine\Engine.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Engine\Profiler.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Engine\Subsystem.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Engine\Timer.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Game\Entity.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Game\Game.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Game\Level.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Math\MathCore.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\AbstractPhysics.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\PhysicsNewton.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\PhysicsTokamak.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\boxcylinder.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\collision.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\collisionbody.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\constraint.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\cylinder.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\dcd.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\lines.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\ne_interface.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\region.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\restcontact.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\rigidbody.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\rigidbodybase.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\scenery.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\simulator.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\solver.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\sphere.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\stack.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\tricollision.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\useopcode.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Platform\AbstractPlatform.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Platform\Input.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Render\AbstractRender.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Render\Camera.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Render\Light.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Render\Material.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Render\Mesh.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Render\RenderBadaOpenGL1.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Render\RenderOpenGL1.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Render\RenderOpenGL2.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Render\Skeleton.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Scene\BoneNode.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Scene\CameraNode.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Scene\ControllerNode.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Scene\EntityNode.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Scene\LightNode.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Scene\MeshNode.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Scene\Node.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Scene\OriginNode.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Scene\ParticleNode.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Scene\ParticleSystemNode.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Scene\PhysicsNode.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Scene\Scene.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Scene\SkinnedMeshNode.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Scene\TextNode.cpp" />
+    <ClCompile Include="..\..\..\Engine\CoreSrc\Scene\TriggerNode.cpp" />
+    <ClCompile Include="..\..\..\Engine\Library\OpenGL\gl\GLee.c" />
+    <ClCompile Include="..\..\..\Engine\Subsystems\Audio\AudioBada.cpp" />
+    <ClCompile Include="..\..\..\Engine\Subsystems\Audio\AudioSquall.cpp" />
+    <ClCompile Include="..\..\..\Engine\Subsystems\Platform\PlatformBada.cpp" />
+    <ClCompile Include="..\..\..\Engine\Subsystems\Platform\PlatformWindows.cpp" />
+    <ClCompile Include="..\..\..\Samples\CBTemplate\Source\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Audio\AbstractAudio.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Common\Action.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Common\Array.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Common\Debug.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Common\Factory.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Common\File.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Common\LibApi.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Common\Log.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Common\Map.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Common\Resource.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Common\SolidArray.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Common\Str.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Common\Stream.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Common\Xml.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Engine\Application.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Engine\Console.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Engine\Engine.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Engine\Profiler.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Engine\Subsystem.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Engine\Timer.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Game\Entity.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Game\Game.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Game\Level.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Math\MathCore.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\AbstractPhysics.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\PhysicsNewton.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\PhysicsTokamak.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\collision.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\collision2.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\constraint.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\containers.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\dcd.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\message.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\rigidbody.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\scenery.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\simulator.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\stack.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\tokamak.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Platform\AbstractPlatform.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Platform\Input.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Render\AbstractRender.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Render\Camera.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Render\Light.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Render\Material.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Render\Mesh.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Render\RenderBadaOpenGL1.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Render\RenderOpenGL1.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Render\RenderOpenGL2.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Render\Skeleton.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Scene\BoneNode.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Scene\CameraNode.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Scene\ControllerNode.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Scene\EntityNode.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Scene\LightNode.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Scene\MeshNode.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Scene\Node.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Scene\OriginNode.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Scene\ParticleNode.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Scene\ParticleSystemNode.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Scene\PhysicsNode.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Scene\Scene.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Scene\SkinnedMeshNode.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Scene\TextNode.h" />
+    <ClInclude Include="..\..\..\Engine\CoreSrc\Scene\TriggerNode.h" />
+    <ClInclude Include="..\..\..\Engine\Library\OpenGL\gl\GLee.h" />
+    <ClInclude Include="..\..\..\Engine\Subsystems\Audio\AudioBada.h" />
+    <ClInclude Include="..\..\..\Engine\Subsystems\Audio\AudioSquall.h" />
+    <ClInclude Include="..\..\..\Engine\Subsystems\Platform\PlatformBada.h" />
+    <ClInclude Include="..\..\..\Engine\Subsystems\Platform\PlatformWindows.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

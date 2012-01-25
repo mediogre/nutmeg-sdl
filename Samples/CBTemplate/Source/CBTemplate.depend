@@ -1,0 +1,3651 @@
+# depslib dependency file v1.0
+1308670124 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\audio\abstractaudio.cpp
+	"AbstractAudio.h"
+	"Factory.h"
+	"SquallAudio.h"
+	"BadaAudio.h"
+
+1308116001 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\audio\abstractaudio.h
+	"Resource.h"
+
+1308636838 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\common\resource.h
+	"Debug.h"
+	"Str.h"
+	"Xml.h"
+	"Log.h"
+	"Map.h"
+	"File.h"
+	"Factory.h"
+	"Timer.h"
+
+1308116059 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\common\debug.h
+	"Settings.h"
+	"FBase.h"
+	"Log.h"
+
+1309381251 e:\nutmegsdk\temp\nutmegsdk\samples\cbtemplate\source\settings.h
+
+1308116068 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\common\log.h
+
+1308116079 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\common\str.h
+	"Array.h"
+	<string.h>
+	<stdio.h>
+	<stdarg.h>
+	<stdlib.h>
+
+1308116055 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\common\array.h
+	"Debug.h"
+	<stdio.h>
+	<typeinfo>
+
+1308116085 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\common\xml.h
+	"Array.h"
+	"Str.h"
+
+1308116071 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\common\map.h
+	"Stream.h"
+	"Array.h"
+	"Assert.h"
+
+1308116082 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\common\stream.h
+
+1308116065 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\common\file.h
+	"Stream.h"
+	"Str.h"
+	<stdio.h>
+
+1308116063 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\common\factory.h
+	"Map.h"
+	"Str.h"
+	"Log.h"
+	<typeinfo>
+
+1308116169 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\engine\timer.h
+
+1308116015 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\audio\squallaudio.h
+
+1308116004 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\audio\badaaudio.h
+
+1308115995 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\audio\badaaudio.cpp
+	"BadaAudio.h"
+	"Settings.h"
+	"AbstractAudio.h"
+	"Str.h"
+	<FBase.h>
+	<FMedia.h>
+
+1308115999 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\audio\squallaudio.cpp
+	"SquallAudio.h"
+	"Settings.h"
+	"AbstractAudio.h"
+	"Str.h"
+	"Squall.h"
+
+1291226918 e:\nutmegsdk\temp\nutmegsdk\engine\library\squall\squall.h
+
+1308116036 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\common\debug.cpp
+	"Debug.h"
+	"Log.h"
+	<stdarg.h>
+	<stdio.h>
+
+1308116038 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\common\file.cpp
+	"File.h"
+	<io.h>
+	<sys/stat.h>
+
+1308116041 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\common\log.cpp
+	"Log.h"
+	<stdarg.h>
+	<stdio.h>
+
+1308116046 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\common\resource.cpp
+	"Resource.h"
+
+1308116047 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\common\str.cpp
+	"Str.h"
+	"Stream.h"
+
+1308116050 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\common\xml.cpp
+	"Xml.h"
+	"Debug.h"
+	"File.h"
+	"MathCore.h"
+
+1308116191 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\math\mathcore.h
+	<math.h>
+
+1308116105 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\core\abstractcore.cpp
+	"AbstractCore.h"
+	"Factory.h"
+	"WindowsCore.h"
+	"BadaCore.h"
+
+1308116120 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\core\abstractcore.h
+	"Input.h"
+
+1308116128 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\core\input.h
+
+1308116138 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\core\windowscore.h
+
+1308116122 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\core\badacore.h
+
+1308116108 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\core\badacore.cpp
+	"BadaCore.h"
+	"Settings.h"
+	"Debug.h"
+	<FBase.h>
+	<FGraphics.h>
+	<FApp.h>
+	<FGraphicsOpenGL.h>
+	<FSystem.h>
+	<FUi.h>
+	<math.h>
+	<FUixSensorManager.h>
+	<FUixSensorTypes.h>
+	"Engine.h"
+	"AbstractCore.h"
+
+1308585946 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\engine\engine.h
+	"AbstractCore.h"
+	"AbstractRender.h"
+	"AbstractPhysics.h"
+	"AbstractAudio.h"
+	"EntityNode.h"
+	"Console.h"
+	"Profiler.h"
+
+1308883656 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\render\abstractrender.h
+	"Resource.h"
+	"MathCore.h"
+	"Skeleton.h"
+
+1309018534 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\render\skeleton.h
+	"MathCore.h"
+	"SolidArray.h"
+	"Resource.h"
+	"Str.h"
+	"AbstractAudio.h"
+
+1308116077 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\common\solidarray.h
+	"Debug.h"
+
+1308116205 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\abstractphysics.h
+	"MathCore.h"
+	"Str.h"
+
+1308584910 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\entitynode.h
+	"Node.h"
+	"Map.h"
+	"Resource.h"
+
+1308611338 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\node.h
+	"MathCore.h"
+	"Str.h"
+
+1309381224 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\engine\console.h
+	"Str.h"
+	"Map.h"
+	"Array.h"
+	"MathCore.h"
+	"AbstractRender.h"
+
+1308116166 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\engine\profiler.h
+	"Timer.h"
+	"Array.h"
+	"AbstractRender.h"
+
+1308116114 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\core\input.cpp
+	"Input.h"
+	"Str.h"
+
+1308682496 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\core\windowscore.cpp
+	"WindowsCore.h"
+	"Assert.h"
+	"Str.h"
+	"Engine.h"
+	"Log.h"
+	"Console.h"
+	<windows.h>
+	"Timer.h"
+	"AbstractCore.h"
+	<windows.h>
+
+1308812926 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\engine\console.cpp
+	"Console.h"
+	"AbstractRender.h"
+	"Input.h"
+
+1308682464 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\engine\engine.cpp
+	"Engine.h"
+	<stdio.h>
+	"Assert.h"
+	"Log.h"
+	"Scene.h"
+
+1308258936 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\scene.h
+	"Node.h"
+	"Array.h"
+	"Stream.h"
+	"Factory.h"
+	"Material.h"
+
+1308116254 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\render\material.h
+	"AbstractRender.h"
+	"MathCore.h"
+	"AbstractRender.h"
+
+1308116154 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\engine\profiler.cpp
+	"Profiler.h"
+
+1308116157 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\engine\timer.cpp
+	"Timer.h"
+	"Settings.h"
+	<FSysSystemTime.h>
+	<windows.h>
+
+1308645850 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\game\entity.cpp
+	"Entity.h"
+	"Debug.h"
+	"EntityNode.h"
+	"Level.h"
+	"Game.h"
+
+1308646294 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\game\entity.h
+	"Game.h"
+	"Entity.h"
+
+1308646162 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\game\game.h
+	"Factory.h"
+
+1308645732 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\game\level.h
+	"Str.h"
+	"Scene.h"
+
+1308646316 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\game\game.cpp
+	"Game.h"
+	"Level.h"
+	"Entity.h"
+	"Xml.h"
+
+1308646334 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\game\level.cpp
+	"Level.h"
+	"EntityNode.h"
+	"Game.h"
+	"Entity.h"
+	"Camera.h"
+	"CameraNode.h"
+
+1308314258 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\render\camera.h
+	"MathCore.h"
+
+1308116309 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\cameranode.h
+	"Node.h"
+	"Camera.h"
+
+1308116188 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\math\mathcore.cpp
+	"MathCore.h"
+	<stdio.h>
+	<string.h>
+	<math.h>
+	<stdlib.h>
+	<time.h>
+	"Debug.h"
+
+1308116198 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\abstractphysics.cpp
+	"Factory.h"
+	"PhysicsNewton.h"
+	"PhysicsTokamak.h"
+
+1308116208 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\physicsnewton.h
+	"AbstractPhysics.h"
+
+1308116211 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\physicstokamak.h
+	"AbstractPhysics.h"
+
+1308116200 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\physicsnewton.cpp
+	"PhysicsNewton.h"
+	"Settings.h"
+	"Debug.h"
+	"Newton.h"
+	"Array.h"
+
+1294539220 e:\nutmegsdk\temp\nutmegsdk\engine\library\newton\newton.h
+
+1308116203 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\physicstokamak.cpp
+	"PhysicsTokamak.h"
+	"tokamak.h"
+	"Array.h"
+
+1291024769 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\tokamak.h
+	<malloc.h>
+	"ne_math.h"
+
+1286724019 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\math\ne_math.h
+	"Opcode.h"
+	<math.h>
+	<float.h>
+	"ne_type.h"
+	"ne_debug.h"
+	"ne_smath.h"
+	"ne_math_misc_inline.h"
+	"ne_math_v3_inline.h"
+	"ne_math_v4_inline.h"
+	"ne_math_m4_inline.h"
+	"ne_math_m3_inline.h"
+	"ne_math_q_inline.h"
+	"ne_math_t3_inline.h"
+
+1291044192 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\math\ne_type.h
+
+1291044192 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\math\ne_debug.h
+	<assert.h>
+	"Debug.h"
+	"Settings.h"
+	"FBase.h"
+
+1286762088 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\math\ne_smath.h
+	<math.h>
+	"ne_type.h"
+
+1286724019 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\math\ne_math_misc_inline.h
+	<stdlib.h>
+
+1286762988 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\math\ne_math_v3_inline.h
+
+1286724019 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\math\ne_math_v4_inline.h
+
+1286724019 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\math\ne_math_m4_inline.h
+
+1286763098 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\math\ne_math_m3_inline.h
+	"ne_math.h"
+
+1286763144 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\math\ne_math_q_inline.h
+
+1286724019 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\math\ne_math_t3_inline.h
+
+1288090721 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\boxcylinder.cpp
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"collision2.h"
+	"constraint.h"
+	"rigidbody.h"
+	"Debug.h"
+	<stdio.h>
+
+1288090721 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\containers.h
+	<string.h>
+
+1286764498 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\scenery.h
+
+1288090721 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\collision.h
+
+1286724019 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\collision2.h
+
+1286724019 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\constraint.h
+
+1288090721 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\rigidbody.h
+
+1288090722 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\collision.cpp
+	"stdio.h"
+	<windows.h>
+	"Debug.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"collision2.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+	"dcd.h"
+
+1288090721 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\stack.h
+
+1286724019 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\simulator.h
+
+1286724019 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\message.h
+
+1286724019 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\dcd.h
+
+1286724019 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\collisionbody.cpp
+	"stdio.h"
+	<windows.h>
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+
+1288090721 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\constraint.cpp
+	"stdio.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+
+1288090721 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\cylinder.cpp
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"collision2.h"
+	"constraint.h"
+	"rigidbody.h"
+	"Debug.h"
+	<stdio.h>
+
+1288090722 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\dcd.cpp
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"collision2.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+	"dcd.h"
+
+1288090721 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\lines.cpp
+	"stdio.h"
+	<windows.h>
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+
+1291024747 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\ne_interface.cpp
+	"math/ne_type.h"
+	"math/ne_debug.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	<windows.h>
+	"stack.h"
+	"simulator.h"
+	"message.h"
+	"stdio.h"
+
+1288170494 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\region.cpp
+	"math/ne_type.h"
+	"math/ne_debug.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	<windows.h>
+	"stack.h"
+	"simulator.h"
+	<stdio.h>
+	"Debug.h"
+
+1288090721 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\restcontact.cpp
+	"stdio.h"
+	<windows.h>
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+
+1288090721 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\rigidbody.cpp
+	"stdio.h"
+	<windows.h>
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+
+1288090721 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\rigidbodybase.cpp
+	"stdio.h"
+	<windows.h>
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+
+1288090721 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\scenery.cpp
+	"math/ne_type.h"
+	"math/ne_debug.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	<windows.h>
+	"stack.h"
+	"simulator.h"
+	<math.h>
+	<stdio.h>
+
+1288090721 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\simulator.cpp
+	"math/ne_type.h"
+	"math/ne_debug.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"stack.h"
+	"simulator.h"
+	"scenery.h"
+	"message.h"
+	<stdio.h>
+	<windows.h>
+
+1288090721 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\solver.cpp
+	"math/ne_type.h"
+	"math/ne_debug.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"stack.h"
+	"simulator.h"
+	"scenery.h"
+	"message.h"
+
+1288090721 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\sphere.cpp
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"collision2.h"
+	"constraint.h"
+	"rigidbody.h"
+	"Debug.h"
+	<stdio.h>
+
+1288090721 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\stack.cpp
+	"math/ne_type.h"
+	"math/ne_debug.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	<windows.h>
+	"stack.h"
+	"simulator.h"
+	"scenery.h"
+	<algorithm>
+	"Debug.h"
+
+1288090721 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\tricollision.cpp
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"collision2.h"
+	"dcd.h"
+	"Debug.h"
+	<stdio.h>
+
+1286724019 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\physics\tokamak\useopcode.cpp
+	<stdio.h>
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"collision2.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+
+1308116222 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\render\abstractrender.cpp
+	"AbstractRender.h"
+	"Factory.h"
+	"RenderOpenGL1.h"
+	"RenderOpenGL2.h"
+	"RenderBadaOpenGL1.h"
+
+1308116262 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\render\renderopengl1.h
+
+1308116266 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\render\renderopengl2.h
+
+1308116259 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\render\renderbadaopengl1.h
+
+1308314334 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\render\camera.cpp
+	"Camera.h"
+	"MathCore.h"
+	"AbstractRender.h"
+
+1308116225 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\render\light.cpp
+	"Light.h"
+
+1308116251 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\render\light.h
+	"MathCore.h"
+
+1308116228 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\render\material.cpp
+	"Material.h"
+
+1308116231 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\render\mesh.cpp
+	"Mesh.h"
+	"File.h"
+	"Str.h"
+
+1308116256 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\render\mesh.h
+	"Stream.h"
+	"SolidArray.h"
+	"Resource.h"
+	"MathCore.h"
+
+1308116234 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\render\renderbadaopengl1.cpp
+	"RenderBadaOpenGL1.h"
+	"Settings.h"
+	<FBase.h>
+	<FMedia.h>
+	<FApp.h>
+	<FGraphicsOpengl.h>
+	<FGraphics.h>
+	<FSystem.h>
+	<FUi.h>
+	"Mesh.h"
+	"AbstractRender.h"
+	"Material.h"
+	"Light.h"
+
+1308660642 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\render\renderopengl1.cpp
+	"RenderOpenGL1.h"
+	"Debug.h"
+	"OpenGL.h"
+	"AbstractRender.h"
+	"Material.h"
+	"Light.h"
+	"il.h"
+	"ilu.h"
+	"ilut.h"
+	"Mesh.h"
+
+1291226918 e:\nutmegsdk\temp\nutmegsdk\engine\library\opengl\opengl.h
+	<windows.h>
+	"gl/glee.h"
+
+1291226918 e:\nutmegsdk\temp\nutmegsdk\engine\library\opengl\gl\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1291226918 e:\nutmegsdk\temp\nutmegsdk\engine\library\devil\il.h
+	<stdio.h>
+	<wchar.h>
+
+1291226918 e:\nutmegsdk\temp\nutmegsdk\engine\library\devil\ilu.h
+	"il.h"
+
+1291226918 e:\nutmegsdk\temp\nutmegsdk\engine\library\devil\ilut.h
+	"il.h"
+	"ilu.h"
+	"config.h"
+	"config.h"
+	<windows.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<allegro.h>
+	<SDL.h>
+	<windows.h>
+
+1291226918 e:\nutmegsdk\temp\nutmegsdk\engine\library\devil\config.h
+
+1308615144 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\render\renderopengl2.cpp
+	"RenderOpenGL2.h"
+	"Debug.h"
+	"OpenGL.h"
+	"AbstractRender.h"
+	"Material.h"
+	"Light.h"
+	"il.h"
+	"ilu.h"
+	"ilut.h"
+	"Mesh.h"
+
+1309018650 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\render\skeleton.cpp
+	"Skeleton.h"
+	<math.h>
+	"Xml.h"
+	"Console.h"
+
+1308632136 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\bonenode.cpp
+	"BoneNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+	"Scene.h"
+	"SkinnedMeshNode.h"
+
+1308587986 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\bonenode.h
+	"Node.h"
+
+1308631964 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\skinnedmeshnode.h
+	"Node.h"
+	"AbstractRender.h"
+	"Skeleton.h"
+	"Array.h"
+
+1308116272 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\cameranode.cpp
+	"CameraNode.h"
+	"AbstractRender.h"
+
+1309091754 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\controllernode.cpp
+	"ControllerNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+	"PhysicsNode.h"
+
+1308116312 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\controllernode.h
+	"Node.h"
+
+1308116332 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\physicsnode.h
+	"Node.h"
+	"AbstractPhysics.h"
+	"Mesh.h"
+
+1308584952 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\entitynode.cpp
+	"EntityNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+	"Scene.h"
+
+1308116277 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\lightnode.cpp
+	"LightNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+
+1308116315 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\lightnode.h
+	"Node.h"
+	"Light.h"
+
+1308116280 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\meshnode.cpp
+	"MeshNode.h"
+	"AbstractRender.h"
+
+1308116317 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\meshnode.h
+	"Node.h"
+	"AbstractRender.h"
+
+1308611458 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\node.cpp
+	"Node.h"
+	"Camera.h"
+	"Xml.h"
+	"Action.h"
+	"AbstractRender.h"
+	"Scene.h"
+
+1308116052 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\common\action.h
+	"Array.h"
+
+1308116285 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\originnode.cpp
+	"OriginNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+
+1308116324 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\originnode.h
+	"Node.h"
+
+1308116290 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\particlenode.cpp
+	"ParticleNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+
+1308116327 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\particlenode.h
+	"Node.h"
+
+1308678360 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\particlesystemnode.cpp
+	"ParticleSystemNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+
+1308673602 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\particlesystemnode.h
+	"Node.h"
+
+1308116295 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\physicsnode.cpp
+	"PhysicsNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+	"Console.h"
+	"Scene.h"
+
+1308611518 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\scene.cpp
+	"Scene.h"
+	"AbstractRender.h"
+	"AbstractPhysics.h"
+	"Xml.h"
+	"Debug.h"
+	"CameraNode.h"
+	"OriginNode.h"
+	"TriggerNode.h"
+	"ParticleNode.h"
+	"ParticleSystemNode.h"
+	"SkinnedMeshNode.h"
+	"LightNode.h"
+	"ControllerNode.h"
+	"MeshNode.h"
+	"PhysicsNode.h"
+	"EntityNode.h"
+	"TextNode.h"
+	"BoneNode.h"
+
+1308116343 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\triggernode.h
+	"Node.h"
+
+1308116342 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\textnode.h
+	"Node.h"
+
+1308787130 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\skinnedmeshnode.cpp
+	"SkinnedMeshNode.h"
+	"AbstractRender.h"
+	"Console.h"
+
+1308403268 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\textnode.cpp
+	"TextNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+
+1308116307 source:e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\scene\triggernode.cpp
+	"TriggerNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+	"Scene.h"
+
+1309383388 source:e:\nutmegsdk\temp\nutmegsdk\engine\library\opengl\opengl.cpp
+	"OpenGL.h"
+	"GL/GLee.c"
+
+1291226918 e:\nutmegsdk\temp\nutmegsdk\engine\library\opengl\gl\glee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"GLee.h"
+	<Carbon/Carbon.h>
+
+1309224678 source:e:\nutmegsdk\temp\nutmegsdk\samples\cbtemplate\source\main.cpp
+	"Nutmeg.h"
+
+1308584194 e:\nutmegsdk\temp\nutmegsdk\engine\coresrc\nutmeg.h
+	"Debug.h"
+	"Array.h"
+	"SolidArray.h"
+	"MathCore.h"
+	"Engine.h"
+	"AbstractRender.h"
+	"AbstractCore.h"
+	"Camera.h"
+	"PhysicsNode.h"
+	"SkinnedMeshNode.h"
+	"TriggerNode.h"
+	"CameraNode.h"
+	"ParticleSystemNode.h"
+	"BoneNode.h"
+	"EntityNode.h"
+	"Scene.h"
+
+1311691295 source:e:\nutmeg\engine\coresrc\audio\abstractaudio.cpp
+	"AbstractAudio.h"
+	"Factory.h"
+
+1311691295 e:\nutmeg\engine\coresrc\audio\abstractaudio.h
+	"Subsystem.h"
+	"LibApi.h"
+
+1311691298 e:\nutmeg\engine\coresrc\common\resource.h
+	"Debug.h"
+	"Str.h"
+	"Xml.h"
+	"Log.h"
+	"Map.h"
+	"File.h"
+	"Factory.h"
+	"Timer.h"
+	"Subsystem.h"
+	"LibApi.h"
+
+1311691298 e:\nutmeg\engine\coresrc\common\debug.h
+	"Settings.h"
+	"LibApi.h"
+	"FBase.h"
+	"Log.h"
+
+1309381251 e:\nutmeg\samples\cbtemplate\source\settings.h
+
+1311691298 e:\nutmeg\engine\coresrc\common\log.h
+	"LibApi.h"
+
+1311691298 e:\nutmeg\engine\coresrc\common\str.h
+	<string.h>
+	<stdio.h>
+	<stdarg.h>
+	<stdlib.h>
+	"Array.h"
+	"LibApi.h"
+
+1311691298 e:\nutmeg\engine\coresrc\common\array.h
+	"Debug.h"
+	<stdio.h>
+	<typeinfo>
+
+1311691298 e:\nutmeg\engine\coresrc\common\xml.h
+	"Array.h"
+	"Str.h"
+	"LibApi.h"
+
+1311691298 e:\nutmeg\engine\coresrc\common\map.h
+	"Stream.h"
+	"Array.h"
+	"Assert.h"
+
+1311691298 e:\nutmeg\engine\coresrc\common\stream.h
+	"LibApi.h"
+
+1311691298 e:\nutmeg\engine\coresrc\common\file.h
+	"Stream.h"
+	"Str.h"
+	<stdio.h>
+	"LibApi.h"
+
+1311691298 e:\nutmeg\engine\coresrc\common\factory.h
+	"Map.h"
+	"Str.h"
+	"Log.h"
+	<typeinfo>
+
+1311691297 e:\nutmeg\engine\coresrc\engine\timer.h
+	"LibApi.h"
+
+1310990761 e:\nutmeg\engine\coresrc\audio\squallaudio.h
+	"LibApi.h"
+
+1310990763 e:\nutmeg\engine\coresrc\audio\badaaudio.h
+	"LibApi.h"
+
+1310990763 source:e:\nutmeg\engine\coresrc\audio\badaaudio.cpp
+	"BadaAudio.h"
+	"Settings.h"
+	"AbstractAudio.h"
+	"Str.h"
+	<FBase.h>
+	<FMedia.h>
+
+1311074533 source:e:\nutmeg\engine\coresrc\audio\squallaudio.cpp
+	"SquallAudio.h"
+	"Settings.h"
+	"AbstractAudio.h"
+	"Str.h"
+	"Squall.h"
+	"Timer.h"
+	"Resource.h"
+
+1311691309 e:\nutmeg\engine\library\squall\squall.h
+
+1311691298 source:e:\nutmeg\engine\coresrc\common\debug.cpp
+	"Debug.h"
+	"Log.h"
+	<stdarg.h>
+	<stdio.h>
+
+1311691298 source:e:\nutmeg\engine\coresrc\common\file.cpp
+	"File.h"
+	<io.h>
+	<sys/stat.h>
+
+1311691298 source:e:\nutmeg\engine\coresrc\common\log.cpp
+	"Log.h"
+	<stdarg.h>
+	<stdio.h>
+
+1311691298 source:e:\nutmeg\engine\coresrc\common\resource.cpp
+	"Resource.h"
+	"AbstractRender.h"
+	"AbstractAudio.h"
+	"Scene.h"
+	"Console.h"
+
+1311691298 source:e:\nutmeg\engine\coresrc\common\str.cpp
+	"Str.h"
+	"Stream.h"
+
+1311691298 source:e:\nutmeg\engine\coresrc\common\xml.cpp
+	"Xml.h"
+	"Debug.h"
+	"File.h"
+	"MathCore.h"
+
+1312104644 e:\nutmeg\engine\coresrc\math\mathcore.h
+	<math.h>
+	"LibApi.h"
+
+1311691298 source:e:\nutmeg\engine\coresrc\core\abstractcore.cpp
+	"AbstractCore.h"
+	"Factory.h"
+
+1311691298 e:\nutmeg\engine\coresrc\core\abstractcore.h
+	"Subsystem.h"
+	"Input.h"
+	"LibApi.h"
+
+1311691298 e:\nutmeg\engine\coresrc\core\input.h
+	"LibApi.h"
+
+1310997666 e:\nutmeg\engine\coresrc\core\windowscore.h
+
+1310997659 e:\nutmeg\engine\coresrc\core\badacore.h
+
+1310997644 source:e:\nutmeg\engine\coresrc\core\badacore.cpp
+	"BadaCore.h"
+	"Settings.h"
+	"Debug.h"
+	<FBase.h>
+	<FGraphics.h>
+	<FApp.h>
+	<FGraphicsOpenGL.h>
+	<FSystem.h>
+	<FUi.h>
+	<math.h>
+	<FUixSensorManager.h>
+	<FUixSensorTypes.h>
+	"Engine.h"
+	"AbstractCore.h"
+
+1311691297 e:\nutmeg\engine\coresrc\engine\engine.h
+	"Application.h"
+	"LibApi.h"
+	"Str.h"
+
+1311691295 e:\nutmeg\engine\coresrc\render\abstractrender.h
+	"MathCore.h"
+	"Skeleton.h"
+	"LibApi.h"
+
+1311705132 e:\nutmeg\engine\coresrc\render\skeleton.h
+	"MathCore.h"
+	"SolidArray.h"
+	"Resource.h"
+	"Str.h"
+	"AbstractAudio.h"
+	"LibApi.h"
+
+1311691298 e:\nutmeg\engine\coresrc\common\solidarray.h
+	"Debug.h"
+
+1311691297 e:\nutmeg\engine\coresrc\physics\abstractphysics.h
+	"MathCore.h"
+	"Str.h"
+	"LibApi.h"
+
+1312122284 e:\nutmeg\engine\coresrc\scene\entitynode.h
+	"Node.h"
+	"Map.h"
+	"Resource.h"
+	"LibApi.h"
+
+1311691300 e:\nutmeg\engine\coresrc\scene\node.h
+	"MathCore.h"
+	"Str.h"
+	"LibApi.h"
+
+1312026506 e:\nutmeg\engine\coresrc\engine\console.h
+	"Str.h"
+	"Map.h"
+	"Array.h"
+	"MathCore.h"
+	"Subsystem.h"
+	"Resource.h"
+	"LibApi.h"
+
+1311691297 e:\nutmeg\engine\coresrc\engine\profiler.h
+	"Timer.h"
+	"Array.h"
+	"Str.h"
+	"MathCore.h"
+	"Subsystem.h"
+	"LibApi.h"
+
+1311691298 source:e:\nutmeg\engine\coresrc\core\input.cpp
+	"Input.h"
+	"Str.h"
+
+1311250460 source:e:\nutmeg\engine\coresrc\core\windowscore.cpp
+	"WindowsCore.h"
+	"Assert.h"
+	"Str.h"
+	"Engine.h"
+	"Log.h"
+	"Console.h"
+	"AbstractRender.h"
+	<windows.h>
+	"Timer.h"
+	"AbstractCore.h"
+	<windows.h>
+
+1312026782 source:e:\nutmeg\engine\coresrc\engine\console.cpp
+	"Console.h"
+	"AbstractRender.h"
+	"Input.h"
+
+1312027077 source:e:\nutmeg\engine\coresrc\engine\engine.cpp
+	"Engine.h"
+	<stdio.h>
+	"Assert.h"
+	"Log.h"
+	"Scene.h"
+	"AbstractPlatform.h"
+	"AbstractRender.h"
+	"AbstractAudio.h"
+	"AbstractPhysics.h"
+	"Console.h"
+	"Profiler.h"
+	"Resource.h"
+
+1312116252 e:\nutmeg\engine\coresrc\scene\scene.h
+	"Node.h"
+	"Array.h"
+	"Stream.h"
+	"Factory.h"
+	"Material.h"
+	"LibApi.h"
+
+1311691295 e:\nutmeg\engine\coresrc\render\material.h
+	"AbstractRender.h"
+	"MathCore.h"
+	"AbstractRender.h"
+	"LibApi.h"
+
+1311691297 source:e:\nutmeg\engine\coresrc\engine\profiler.cpp
+	"Profiler.h"
+	"AbstractRender.h"
+
+1311691297 source:e:\nutmeg\engine\coresrc\engine\timer.cpp
+	"Timer.h"
+	"Settings.h"
+	<FSysSystemTime.h>
+	<windows.h>
+
+1312208171 source:e:\nutmeg\engine\coresrc\game\entity.cpp
+	"Entity.h"
+	"Debug.h"
+	"EntityNode.h"
+	"Level.h"
+	"Game.h"
+
+1312183718 e:\nutmeg\engine\coresrc\game\entity.h
+	"Game.h"
+	"Entity.h"
+	"LibApi.h"
+
+1312121688 e:\nutmeg\engine\coresrc\game\game.h
+	"Factory.h"
+	"LibApi.h"
+	"Subsystem.h"
+
+1312183841 e:\nutmeg\engine\coresrc\game\level.h
+	"Str.h"
+	"Scene.h"
+	"LibApi.h"
+
+1312121689 source:e:\nutmeg\engine\coresrc\game\game.cpp
+	"Game.h"
+	"Level.h"
+	"Entity.h"
+	"Xml.h"
+
+1312183809 source:e:\nutmeg\engine\coresrc\game\level.cpp
+	"Level.h"
+	"EntityNode.h"
+	"Game.h"
+	"Entity.h"
+	"Camera.h"
+	"Console.h"
+	"CameraNode.h"
+
+1311691295 e:\nutmeg\engine\coresrc\render\camera.h
+	"MathCore.h"
+	"LibApi.h"
+
+1311691300 e:\nutmeg\engine\coresrc\scene\cameranode.h
+	"Node.h"
+	"Camera.h"
+	"LibApi.h"
+
+1312104644 source:e:\nutmeg\engine\coresrc\math\mathcore.cpp
+	"MathCore.h"
+	<stdio.h>
+	<string.h>
+	<math.h>
+	<stdlib.h>
+	<time.h>
+	"Debug.h"
+
+1311691297 source:e:\nutmeg\engine\coresrc\physics\abstractphysics.cpp
+	"Factory.h"
+	"PhysicsNewton.h"
+
+1311691297 e:\nutmeg\engine\coresrc\physics\physicsnewton.h
+	"AbstractPhysics.h"
+
+1310997751 e:\nutmeg\engine\coresrc\physics\physicstokamak.h
+	"AbstractPhysics.h"
+
+1311691297 source:e:\nutmeg\engine\coresrc\physics\physicsnewton.cpp
+	"PhysicsNewton.h"
+	"Settings.h"
+	"Debug.h"
+	"Newton.h"
+	"Array.h"
+
+1311691329 e:\nutmeg\engine\library\newton\newton.h
+
+1310997744 source:e:\nutmeg\engine\coresrc\physics\physicstokamak.cpp
+	"PhysicsTokamak.h"
+	"tokamak.h"
+	"Array.h"
+
+1291024769 e:\nutmeg\engine\coresrc\physics\tokamak\tokamak.h
+	<malloc.h>
+	"ne_math.h"
+
+1286724019 e:\nutmeg\engine\coresrc\physics\tokamak\math\ne_math.h
+	"Opcode.h"
+	<math.h>
+	<float.h>
+	"ne_type.h"
+	"ne_debug.h"
+	"ne_smath.h"
+	"ne_math_misc_inline.h"
+	"ne_math_v3_inline.h"
+	"ne_math_v4_inline.h"
+	"ne_math_m4_inline.h"
+	"ne_math_m3_inline.h"
+	"ne_math_q_inline.h"
+	"ne_math_t3_inline.h"
+
+1291044192 e:\nutmeg\engine\coresrc\physics\tokamak\math\ne_type.h
+
+1291044192 e:\nutmeg\engine\coresrc\physics\tokamak\math\ne_debug.h
+	<assert.h>
+	"Debug.h"
+	"Settings.h"
+	"FBase.h"
+
+1286762088 e:\nutmeg\engine\coresrc\physics\tokamak\math\ne_smath.h
+	<math.h>
+	"ne_type.h"
+
+1286724019 e:\nutmeg\engine\coresrc\physics\tokamak\math\ne_math_misc_inline.h
+	<stdlib.h>
+
+1286762988 e:\nutmeg\engine\coresrc\physics\tokamak\math\ne_math_v3_inline.h
+
+1286724019 e:\nutmeg\engine\coresrc\physics\tokamak\math\ne_math_v4_inline.h
+
+1286724019 e:\nutmeg\engine\coresrc\physics\tokamak\math\ne_math_m4_inline.h
+
+1286763098 e:\nutmeg\engine\coresrc\physics\tokamak\math\ne_math_m3_inline.h
+	"ne_math.h"
+
+1286763144 e:\nutmeg\engine\coresrc\physics\tokamak\math\ne_math_q_inline.h
+
+1286724019 e:\nutmeg\engine\coresrc\physics\tokamak\math\ne_math_t3_inline.h
+
+1288090721 source:e:\nutmeg\engine\coresrc\physics\tokamak\boxcylinder.cpp
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"collision2.h"
+	"constraint.h"
+	"rigidbody.h"
+	"Debug.h"
+	<stdio.h>
+
+1288090721 e:\nutmeg\engine\coresrc\physics\tokamak\containers.h
+	<string.h>
+
+1286764498 e:\nutmeg\engine\coresrc\physics\tokamak\scenery.h
+
+1288090721 e:\nutmeg\engine\coresrc\physics\tokamak\collision.h
+
+1286724019 e:\nutmeg\engine\coresrc\physics\tokamak\collision2.h
+
+1286724019 e:\nutmeg\engine\coresrc\physics\tokamak\constraint.h
+
+1288090721 e:\nutmeg\engine\coresrc\physics\tokamak\rigidbody.h
+
+1288090722 source:e:\nutmeg\engine\coresrc\physics\tokamak\collision.cpp
+	"stdio.h"
+	<windows.h>
+	"Debug.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"collision2.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+	"dcd.h"
+
+1288090721 e:\nutmeg\engine\coresrc\physics\tokamak\stack.h
+
+1286724019 e:\nutmeg\engine\coresrc\physics\tokamak\simulator.h
+
+1286724019 e:\nutmeg\engine\coresrc\physics\tokamak\message.h
+
+1286724019 e:\nutmeg\engine\coresrc\physics\tokamak\dcd.h
+
+1286724019 source:e:\nutmeg\engine\coresrc\physics\tokamak\collisionbody.cpp
+	"stdio.h"
+	<windows.h>
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+
+1288090721 source:e:\nutmeg\engine\coresrc\physics\tokamak\constraint.cpp
+	"stdio.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+
+1288090721 source:e:\nutmeg\engine\coresrc\physics\tokamak\cylinder.cpp
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"collision2.h"
+	"constraint.h"
+	"rigidbody.h"
+	"Debug.h"
+	<stdio.h>
+
+1288090722 source:e:\nutmeg\engine\coresrc\physics\tokamak\dcd.cpp
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"collision2.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+	"dcd.h"
+
+1288090721 source:e:\nutmeg\engine\coresrc\physics\tokamak\lines.cpp
+	"stdio.h"
+	<windows.h>
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+
+1291024747 source:e:\nutmeg\engine\coresrc\physics\tokamak\ne_interface.cpp
+	"math/ne_type.h"
+	"math/ne_debug.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	<windows.h>
+	"stack.h"
+	"simulator.h"
+	"message.h"
+	"stdio.h"
+
+1288170494 source:e:\nutmeg\engine\coresrc\physics\tokamak\region.cpp
+	"math/ne_type.h"
+	"math/ne_debug.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	<windows.h>
+	"stack.h"
+	"simulator.h"
+	<stdio.h>
+	"Debug.h"
+
+1288090721 source:e:\nutmeg\engine\coresrc\physics\tokamak\restcontact.cpp
+	"stdio.h"
+	<windows.h>
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+
+1288090721 source:e:\nutmeg\engine\coresrc\physics\tokamak\rigidbody.cpp
+	"stdio.h"
+	<windows.h>
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+
+1288090721 source:e:\nutmeg\engine\coresrc\physics\tokamak\rigidbodybase.cpp
+	"stdio.h"
+	<windows.h>
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+
+1288090721 source:e:\nutmeg\engine\coresrc\physics\tokamak\scenery.cpp
+	"math/ne_type.h"
+	"math/ne_debug.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	<windows.h>
+	"stack.h"
+	"simulator.h"
+	<math.h>
+	<stdio.h>
+
+1288090721 source:e:\nutmeg\engine\coresrc\physics\tokamak\simulator.cpp
+	"math/ne_type.h"
+	"math/ne_debug.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"stack.h"
+	"simulator.h"
+	"scenery.h"
+	"message.h"
+	<stdio.h>
+	<windows.h>
+
+1288090721 source:e:\nutmeg\engine\coresrc\physics\tokamak\solver.cpp
+	"math/ne_type.h"
+	"math/ne_debug.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"stack.h"
+	"simulator.h"
+	"scenery.h"
+	"message.h"
+
+1288090721 source:e:\nutmeg\engine\coresrc\physics\tokamak\sphere.cpp
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"collision2.h"
+	"constraint.h"
+	"rigidbody.h"
+	"Debug.h"
+	<stdio.h>
+
+1288090721 source:e:\nutmeg\engine\coresrc\physics\tokamak\stack.cpp
+	"math/ne_type.h"
+	"math/ne_debug.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	<windows.h>
+	"stack.h"
+	"simulator.h"
+	"scenery.h"
+	<algorithm>
+	"Debug.h"
+
+1288090721 source:e:\nutmeg\engine\coresrc\physics\tokamak\tricollision.cpp
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"collision2.h"
+	"dcd.h"
+	"Debug.h"
+	<stdio.h>
+
+1286724019 source:e:\nutmeg\engine\coresrc\physics\tokamak\useopcode.cpp
+	<stdio.h>
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"collision2.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+
+1311691295 source:e:\nutmeg\engine\coresrc\render\abstractrender.cpp
+	"AbstractRender.h"
+	"Factory.h"
+	"RenderOpenGL1.h"
+	"RenderOpenGL2.h"
+	"RenderBadaOpenGL1.h"
+
+1311691296 e:\nutmeg\engine\coresrc\render\renderopengl1.h
+
+1311691295 e:\nutmeg\engine\coresrc\render\renderopengl2.h
+
+1311691295 e:\nutmeg\engine\coresrc\render\renderbadaopengl1.h
+
+1311691295 source:e:\nutmeg\engine\coresrc\render\camera.cpp
+	"Camera.h"
+	"MathCore.h"
+	"AbstractRender.h"
+
+1311691295 source:e:\nutmeg\engine\coresrc\render\light.cpp
+	"Light.h"
+
+1311691295 e:\nutmeg\engine\coresrc\render\light.h
+	"MathCore.h"
+	"LibApi.h"
+
+1311691295 source:e:\nutmeg\engine\coresrc\render\material.cpp
+	"Material.h"
+
+1311691295 source:e:\nutmeg\engine\coresrc\render\mesh.cpp
+	"Mesh.h"
+	"File.h"
+	"Str.h"
+
+1311691295 e:\nutmeg\engine\coresrc\render\mesh.h
+	"Stream.h"
+	"SolidArray.h"
+	"Resource.h"
+	"MathCore.h"
+	"LibApi.h"
+
+1311691295 source:e:\nutmeg\engine\coresrc\render\renderbadaopengl1.cpp
+	"RenderBadaOpenGL1.h"
+	"Settings.h"
+	<FBase.h>
+	<FMedia.h>
+	<FApp.h>
+	<FGraphicsOpengl.h>
+	<FGraphics.h>
+	<FSystem.h>
+	<FUi.h>
+	"Mesh.h"
+	"AbstractRender.h"
+	"Material.h"
+	"Light.h"
+
+1311706546 source:e:\nutmeg\engine\coresrc\render\renderopengl1.cpp
+	"RenderOpenGL1.h"
+	"Debug.h"
+	"OpenGL.h"
+	"AbstractRender.h"
+	"Material.h"
+	"Light.h"
+	"il.h"
+	"ilu.h"
+	"ilut.h"
+	"Mesh.h"
+
+1311691309 e:\nutmeg\engine\library\opengl\opengl.h
+	<windows.h>
+	"gl/glee.h"
+
+1311691309 e:\nutmeg\engine\library\opengl\gl\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1311691309 e:\nutmeg\engine\library\devil\il.h
+	<stdio.h>
+	<wchar.h>
+
+1311691309 e:\nutmeg\engine\library\devil\ilu.h
+	"il.h"
+
+1311691309 e:\nutmeg\engine\library\devil\ilut.h
+	"il.h"
+	"ilu.h"
+	"config.h"
+	"config.h"
+	<windows.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<allegro.h>
+	<SDL.h>
+	<windows.h>
+
+1311691309 e:\nutmeg\engine\library\devil\config.h
+
+1311703198 source:e:\nutmeg\engine\coresrc\render\renderopengl2.cpp
+	"RenderOpenGL2.h"
+	"Debug.h"
+	"OpenGL.h"
+	"AbstractRender.h"
+	"Material.h"
+	"Light.h"
+	"il.h"
+	"ilu.h"
+	"ilut.h"
+	"Mesh.h"
+
+1312104688 source:e:\nutmeg\engine\coresrc\render\skeleton.cpp
+	"Skeleton.h"
+	<math.h>
+	"Xml.h"
+	"Console.h"
+
+1312047684 source:e:\nutmeg\engine\coresrc\scene\bonenode.cpp
+	"BoneNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+	"Scene.h"
+	"SkinnedMeshNode.h"
+
+1311691300 e:\nutmeg\engine\coresrc\scene\bonenode.h
+	"Node.h"
+	"LibApi.h"
+
+1311691300 e:\nutmeg\engine\coresrc\scene\skinnedmeshnode.h
+	"Node.h"
+	"AbstractRender.h"
+	"Skeleton.h"
+	"Array.h"
+	"LibApi.h"
+
+1311691300 source:e:\nutmeg\engine\coresrc\scene\cameranode.cpp
+	"CameraNode.h"
+	"AbstractRender.h"
+
+1312104706 source:e:\nutmeg\engine\coresrc\scene\controllernode.cpp
+	"ControllerNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+	"PhysicsNode.h"
+
+1311691300 e:\nutmeg\engine\coresrc\scene\controllernode.h
+	"Node.h"
+	"LibApi.h"
+
+1311691300 e:\nutmeg\engine\coresrc\scene\physicsnode.h
+	"Node.h"
+	"LibApi.h"
+	"AbstractPhysics.h"
+	"Mesh.h"
+
+1312122314 source:e:\nutmeg\engine\coresrc\scene\entitynode.cpp
+	"EntityNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+	"Scene.h"
+
+1311691300 source:e:\nutmeg\engine\coresrc\scene\lightnode.cpp
+	"LightNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+
+1311691300 e:\nutmeg\engine\coresrc\scene\lightnode.h
+	"Node.h"
+	"Light.h"
+	"LibApi.h"
+
+1311691300 source:e:\nutmeg\engine\coresrc\scene\meshnode.cpp
+	"MeshNode.h"
+	"AbstractRender.h"
+
+1311691300 e:\nutmeg\engine\coresrc\scene\meshnode.h
+	"Node.h"
+	"AbstractRender.h"
+	"LibApi.h"
+
+1311925745 source:e:\nutmeg\engine\coresrc\scene\node.cpp
+	"Node.h"
+	"Camera.h"
+	"Xml.h"
+	"Action.h"
+	"AbstractRender.h"
+	"Scene.h"
+
+1311691298 e:\nutmeg\engine\coresrc\common\action.h
+	"Array.h"
+
+1311691300 source:e:\nutmeg\engine\coresrc\scene\originnode.cpp
+	"OriginNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+
+1311691300 e:\nutmeg\engine\coresrc\scene\originnode.h
+	"Node.h"
+	"LibApi.h"
+
+1311691300 source:e:\nutmeg\engine\coresrc\scene\particlenode.cpp
+	"ParticleNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+
+1311691300 e:\nutmeg\engine\coresrc\scene\particlenode.h
+	"Node.h"
+	"LibApi.h"
+
+1312117182 source:e:\nutmeg\engine\coresrc\scene\particlesystemnode.cpp
+	"ParticleSystemNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+
+1312117086 e:\nutmeg\engine\coresrc\scene\particlesystemnode.h
+	"Node.h"
+	"LibApi.h"
+
+1311691300 source:e:\nutmeg\engine\coresrc\scene\physicsnode.cpp
+	"PhysicsNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+	"Console.h"
+	"Scene.h"
+
+1312116474 source:e:\nutmeg\engine\coresrc\scene\scene.cpp
+	"Scene.h"
+	"AbstractRender.h"
+	"AbstractPhysics.h"
+	"Xml.h"
+	"Debug.h"
+	"CameraNode.h"
+	"OriginNode.h"
+	"TriggerNode.h"
+	"ParticleNode.h"
+	"ParticleSystemNode.h"
+	"SkinnedMeshNode.h"
+	"LightNode.h"
+	"ControllerNode.h"
+	"MeshNode.h"
+	"PhysicsNode.h"
+	"EntityNode.h"
+	"TextNode.h"
+	"BoneNode.h"
+	"Engine.h"
+
+1311691300 e:\nutmeg\engine\coresrc\scene\triggernode.h
+	"Node.h"
+	"LibApi.h"
+
+1311691300 e:\nutmeg\engine\coresrc\scene\textnode.h
+	"Node.h"
+	"LibApi.h"
+
+1311691300 source:e:\nutmeg\engine\coresrc\scene\skinnedmeshnode.cpp
+	"SkinnedMeshNode.h"
+	"AbstractRender.h"
+	"Console.h"
+
+1311691300 source:e:\nutmeg\engine\coresrc\scene\textnode.cpp
+	"TextNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+
+1311691300 source:e:\nutmeg\engine\coresrc\scene\triggernode.cpp
+	"TriggerNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+	"Scene.h"
+
+1311691309 source:e:\nutmeg\engine\library\opengl\opengl.cpp
+	"OpenGL.h"
+	"GL/GLee.c"
+
+1311691309 e:\nutmeg\engine\library\opengl\gl\glee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"GLee.h"
+	<Carbon/Carbon.h>
+
+1312214574 source:e:\nutmeg\samples\cbtemplate\source\main.cpp
+	"Nutmeg.h"
+	"RenderOpenGL1.h"
+	"PlatformWindows.h"
+	"AudioSquall.h"
+
+1311692482 e:\nutmeg\engine\coresrc\nutmeg.h
+	"Debug.h"
+	"Array.h"
+	"SolidArray.h"
+	"MathCore.h"
+	"Resource.h"
+	"Application.h"
+	"Engine.h"
+	"Camera.h"
+	"Console.h"
+	"Profiler.h"
+	"AbstractRender.h"
+	"AbstractPlatform.h"
+	"AbstractAudio.h"
+	"Scene.h"
+	"PhysicsNode.h"
+	"SkinnedMeshNode.h"
+	"TriggerNode.h"
+	"OriginNode.h"
+	"MeshNode.h"
+	"CameraNode.h"
+	"ParticleSystemNode.h"
+	"BoneNode.h"
+	"EntityNode.h"
+	"Entity.h"
+	"Level.h"
+	"Game.h"
+
+1308670124 source:e:\nutmeg0\engine\coresrc\audio\abstractaudio.cpp
+	"AbstractAudio.h"
+	"Factory.h"
+	"SquallAudio.h"
+	"BadaAudio.h"
+
+1308116001 e:\nutmeg0\engine\coresrc\audio\abstractaudio.h
+	"Resource.h"
+
+1308636838 e:\nutmeg0\engine\coresrc\common\resource.h
+	"Debug.h"
+	"Str.h"
+	"Xml.h"
+	"Log.h"
+	"Map.h"
+	"File.h"
+	"Factory.h"
+	"Timer.h"
+
+1308116059 e:\nutmeg0\engine\coresrc\common\debug.h
+	"Settings.h"
+	"FBase.h"
+	"Log.h"
+
+1309381251 e:\nutmeg0\samples\cbtemplate\source\settings.h
+
+1308116068 e:\nutmeg0\engine\coresrc\common\log.h
+
+1309432796 e:\nutmeg0\engine\coresrc\common\str.h
+	"Array.h"
+	<string.h>
+	<stdio.h>
+	<stdarg.h>
+	<stdlib.h>
+
+1309433672 e:\nutmeg0\engine\coresrc\common\array.h
+	"Debug.h"
+	<stdio.h>
+	<typeinfo>
+
+1308116085 e:\nutmeg0\engine\coresrc\common\xml.h
+	"Array.h"
+	"Str.h"
+
+1308116071 e:\nutmeg0\engine\coresrc\common\map.h
+	"Stream.h"
+	"Array.h"
+	"Assert.h"
+
+1308116082 e:\nutmeg0\engine\coresrc\common\stream.h
+
+1308116065 e:\nutmeg0\engine\coresrc\common\file.h
+	"Stream.h"
+	"Str.h"
+	<stdio.h>
+
+1308116063 e:\nutmeg0\engine\coresrc\common\factory.h
+	"Map.h"
+	"Str.h"
+	"Log.h"
+	<typeinfo>
+
+1308116169 e:\nutmeg0\engine\coresrc\engine\timer.h
+
+1308116015 e:\nutmeg0\engine\coresrc\audio\squallaudio.h
+
+1308116004 e:\nutmeg0\engine\coresrc\audio\badaaudio.h
+
+1308115995 source:e:\nutmeg0\engine\coresrc\audio\badaaudio.cpp
+	"BadaAudio.h"
+	"Settings.h"
+	"AbstractAudio.h"
+	"Str.h"
+	<FBase.h>
+	<FMedia.h>
+
+1309431170 source:e:\nutmeg0\engine\coresrc\audio\squallaudio.cpp
+	"SquallAudio.h"
+	"Settings.h"
+	"AbstractAudio.h"
+	"Str.h"
+	"Squall.h"
+
+1291226918 e:\nutmeg0\engine\library\squall\squall.h
+
+1308116036 source:e:\nutmeg0\engine\coresrc\common\debug.cpp
+	"Debug.h"
+	"Log.h"
+	<stdarg.h>
+	<stdio.h>
+
+1308116038 source:e:\nutmeg0\engine\coresrc\common\file.cpp
+	"File.h"
+	<io.h>
+	<sys/stat.h>
+
+1308116041 source:e:\nutmeg0\engine\coresrc\common\log.cpp
+	"Log.h"
+	<stdarg.h>
+	<stdio.h>
+
+1308116046 source:e:\nutmeg0\engine\coresrc\common\resource.cpp
+	"Resource.h"
+
+1308116047 source:e:\nutmeg0\engine\coresrc\common\str.cpp
+	"Str.h"
+	"Stream.h"
+
+1308116050 source:e:\nutmeg0\engine\coresrc\common\xml.cpp
+	"Xml.h"
+	"Debug.h"
+	"File.h"
+	"MathCore.h"
+
+1308116191 e:\nutmeg0\engine\coresrc\math\mathcore.h
+	<math.h>
+
+1308116105 source:e:\nutmeg0\engine\coresrc\core\abstractcore.cpp
+	"AbstractCore.h"
+	"Factory.h"
+	"WindowsCore.h"
+	"BadaCore.h"
+
+1308116120 e:\nutmeg0\engine\coresrc\core\abstractcore.h
+	"Input.h"
+
+1308116128 e:\nutmeg0\engine\coresrc\core\input.h
+
+1308116138 e:\nutmeg0\engine\coresrc\core\windowscore.h
+
+1308116122 e:\nutmeg0\engine\coresrc\core\badacore.h
+
+1308116108 source:e:\nutmeg0\engine\coresrc\core\badacore.cpp
+	"BadaCore.h"
+	"Settings.h"
+	"Debug.h"
+	<FBase.h>
+	<FGraphics.h>
+	<FApp.h>
+	<FGraphicsOpenGL.h>
+	<FSystem.h>
+	<FUi.h>
+	<math.h>
+	<FUixSensorManager.h>
+	<FUixSensorTypes.h>
+	"Engine.h"
+	"AbstractCore.h"
+
+1308585946 e:\nutmeg0\engine\coresrc\engine\engine.h
+	"AbstractCore.h"
+	"AbstractRender.h"
+	"AbstractPhysics.h"
+	"AbstractAudio.h"
+	"EntityNode.h"
+	"Console.h"
+	"Profiler.h"
+
+1308883656 e:\nutmeg0\engine\coresrc\render\abstractrender.h
+	"Resource.h"
+	"MathCore.h"
+	"Skeleton.h"
+
+1309018534 e:\nutmeg0\engine\coresrc\render\skeleton.h
+	"MathCore.h"
+	"SolidArray.h"
+	"Resource.h"
+	"Str.h"
+	"AbstractAudio.h"
+
+1308116077 e:\nutmeg0\engine\coresrc\common\solidarray.h
+	"Debug.h"
+
+1308116205 e:\nutmeg0\engine\coresrc\physics\abstractphysics.h
+	"MathCore.h"
+	"Str.h"
+
+1308584910 e:\nutmeg0\engine\coresrc\scene\entitynode.h
+	"Node.h"
+	"Map.h"
+	"Resource.h"
+
+1308611338 e:\nutmeg0\engine\coresrc\scene\node.h
+	"MathCore.h"
+	"Str.h"
+
+1309435595 e:\nutmeg0\engine\coresrc\engine\console.h
+	"Str.h"
+	"Map.h"
+	"Array.h"
+	"MathCore.h"
+	"AbstractRender.h"
+
+1308116166 e:\nutmeg0\engine\coresrc\engine\profiler.h
+	"Timer.h"
+	"Array.h"
+	"AbstractRender.h"
+
+1308116114 source:e:\nutmeg0\engine\coresrc\core\input.cpp
+	"Input.h"
+	"Str.h"
+
+1309427521 source:e:\nutmeg0\engine\coresrc\core\windowscore.cpp
+	"WindowsCore.h"
+	"Assert.h"
+	"Str.h"
+	"Engine.h"
+	"Log.h"
+	"Console.h"
+	<windows.h>
+	"Timer.h"
+	"AbstractCore.h"
+	<windows.h>
+
+1309435679 source:e:\nutmeg0\engine\coresrc\engine\console.cpp
+	"Console.h"
+	"AbstractRender.h"
+	"Input.h"
+
+1308682464 source:e:\nutmeg0\engine\coresrc\engine\engine.cpp
+	"Engine.h"
+	<stdio.h>
+	"Assert.h"
+	"Log.h"
+	"Scene.h"
+
+1308258936 e:\nutmeg0\engine\coresrc\scene\scene.h
+	"Node.h"
+	"Array.h"
+	"Stream.h"
+	"Factory.h"
+	"Material.h"
+
+1308116254 e:\nutmeg0\engine\coresrc\render\material.h
+	"AbstractRender.h"
+	"MathCore.h"
+	"AbstractRender.h"
+
+1308116154 source:e:\nutmeg0\engine\coresrc\engine\profiler.cpp
+	"Profiler.h"
+
+1308116157 source:e:\nutmeg0\engine\coresrc\engine\timer.cpp
+	"Timer.h"
+	"Settings.h"
+	<FSysSystemTime.h>
+	<windows.h>
+
+1308645850 source:e:\nutmeg0\engine\coresrc\game\entity.cpp
+	"Entity.h"
+	"Debug.h"
+	"EntityNode.h"
+	"Level.h"
+	"Game.h"
+
+1308646294 e:\nutmeg0\engine\coresrc\game\entity.h
+	"Game.h"
+	"Entity.h"
+
+1308646162 e:\nutmeg0\engine\coresrc\game\game.h
+	"Factory.h"
+
+1308645732 e:\nutmeg0\engine\coresrc\game\level.h
+	"Str.h"
+	"Scene.h"
+
+1308646316 source:e:\nutmeg0\engine\coresrc\game\game.cpp
+	"Game.h"
+	"Level.h"
+	"Entity.h"
+	"Xml.h"
+
+1308646334 source:e:\nutmeg0\engine\coresrc\game\level.cpp
+	"Level.h"
+	"EntityNode.h"
+	"Game.h"
+	"Entity.h"
+	"Camera.h"
+	"CameraNode.h"
+
+1308314258 e:\nutmeg0\engine\coresrc\render\camera.h
+	"MathCore.h"
+
+1308116309 e:\nutmeg0\engine\coresrc\scene\cameranode.h
+	"Node.h"
+	"Camera.h"
+
+1308116188 source:e:\nutmeg0\engine\coresrc\math\mathcore.cpp
+	"MathCore.h"
+	<stdio.h>
+	<string.h>
+	<math.h>
+	<stdlib.h>
+	<time.h>
+	"Debug.h"
+
+1308116198 source:e:\nutmeg0\engine\coresrc\physics\abstractphysics.cpp
+	"Factory.h"
+	"PhysicsNewton.h"
+	"PhysicsTokamak.h"
+
+1308116208 e:\nutmeg0\engine\coresrc\physics\physicsnewton.h
+	"AbstractPhysics.h"
+
+1308116211 e:\nutmeg0\engine\coresrc\physics\physicstokamak.h
+	"AbstractPhysics.h"
+
+1308116200 source:e:\nutmeg0\engine\coresrc\physics\physicsnewton.cpp
+	"PhysicsNewton.h"
+	"Settings.h"
+	"Debug.h"
+	"Newton.h"
+	"Array.h"
+
+1294539220 e:\nutmeg0\engine\library\newton\newton.h
+
+1308116203 source:e:\nutmeg0\engine\coresrc\physics\physicstokamak.cpp
+	"PhysicsTokamak.h"
+	"tokamak.h"
+	"Array.h"
+
+1291024769 e:\nutmeg0\engine\coresrc\physics\tokamak\tokamak.h
+	<malloc.h>
+	"ne_math.h"
+
+1286724019 e:\nutmeg0\engine\coresrc\physics\tokamak\math\ne_math.h
+	"Opcode.h"
+	<math.h>
+	<float.h>
+	"ne_type.h"
+	"ne_debug.h"
+	"ne_smath.h"
+	"ne_math_misc_inline.h"
+	"ne_math_v3_inline.h"
+	"ne_math_v4_inline.h"
+	"ne_math_m4_inline.h"
+	"ne_math_m3_inline.h"
+	"ne_math_q_inline.h"
+	"ne_math_t3_inline.h"
+
+1291044192 e:\nutmeg0\engine\coresrc\physics\tokamak\math\ne_type.h
+
+1291044192 e:\nutmeg0\engine\coresrc\physics\tokamak\math\ne_debug.h
+	<assert.h>
+	"Debug.h"
+	"Settings.h"
+	"FBase.h"
+
+1286762088 e:\nutmeg0\engine\coresrc\physics\tokamak\math\ne_smath.h
+	<math.h>
+	"ne_type.h"
+
+1286724019 e:\nutmeg0\engine\coresrc\physics\tokamak\math\ne_math_misc_inline.h
+	<stdlib.h>
+
+1286762988 e:\nutmeg0\engine\coresrc\physics\tokamak\math\ne_math_v3_inline.h
+
+1286724019 e:\nutmeg0\engine\coresrc\physics\tokamak\math\ne_math_v4_inline.h
+
+1286724019 e:\nutmeg0\engine\coresrc\physics\tokamak\math\ne_math_m4_inline.h
+
+1286763098 e:\nutmeg0\engine\coresrc\physics\tokamak\math\ne_math_m3_inline.h
+	"ne_math.h"
+
+1286763144 e:\nutmeg0\engine\coresrc\physics\tokamak\math\ne_math_q_inline.h
+
+1286724019 e:\nutmeg0\engine\coresrc\physics\tokamak\math\ne_math_t3_inline.h
+
+1288090721 source:e:\nutmeg0\engine\coresrc\physics\tokamak\boxcylinder.cpp
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"collision2.h"
+	"constraint.h"
+	"rigidbody.h"
+	"Debug.h"
+	<stdio.h>
+
+1288090721 e:\nutmeg0\engine\coresrc\physics\tokamak\containers.h
+	<string.h>
+
+1286764498 e:\nutmeg0\engine\coresrc\physics\tokamak\scenery.h
+
+1288090721 e:\nutmeg0\engine\coresrc\physics\tokamak\collision.h
+
+1286724019 e:\nutmeg0\engine\coresrc\physics\tokamak\collision2.h
+
+1286724019 e:\nutmeg0\engine\coresrc\physics\tokamak\constraint.h
+
+1288090721 e:\nutmeg0\engine\coresrc\physics\tokamak\rigidbody.h
+
+1288090722 source:e:\nutmeg0\engine\coresrc\physics\tokamak\collision.cpp
+	"stdio.h"
+	<windows.h>
+	"Debug.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"collision2.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+	"dcd.h"
+
+1288090721 e:\nutmeg0\engine\coresrc\physics\tokamak\stack.h
+
+1286724019 e:\nutmeg0\engine\coresrc\physics\tokamak\simulator.h
+
+1286724019 e:\nutmeg0\engine\coresrc\physics\tokamak\message.h
+
+1286724019 e:\nutmeg0\engine\coresrc\physics\tokamak\dcd.h
+
+1286724019 source:e:\nutmeg0\engine\coresrc\physics\tokamak\collisionbody.cpp
+	"stdio.h"
+	<windows.h>
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+
+1288090721 source:e:\nutmeg0\engine\coresrc\physics\tokamak\constraint.cpp
+	"stdio.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+
+1288090721 source:e:\nutmeg0\engine\coresrc\physics\tokamak\cylinder.cpp
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"collision2.h"
+	"constraint.h"
+	"rigidbody.h"
+	"Debug.h"
+	<stdio.h>
+
+1288090722 source:e:\nutmeg0\engine\coresrc\physics\tokamak\dcd.cpp
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"collision2.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+	"dcd.h"
+
+1288090721 source:e:\nutmeg0\engine\coresrc\physics\tokamak\lines.cpp
+	"stdio.h"
+	<windows.h>
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+
+1291024747 source:e:\nutmeg0\engine\coresrc\physics\tokamak\ne_interface.cpp
+	"math/ne_type.h"
+	"math/ne_debug.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	<windows.h>
+	"stack.h"
+	"simulator.h"
+	"message.h"
+	"stdio.h"
+
+1288170494 source:e:\nutmeg0\engine\coresrc\physics\tokamak\region.cpp
+	"math/ne_type.h"
+	"math/ne_debug.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	<windows.h>
+	"stack.h"
+	"simulator.h"
+	<stdio.h>
+	"Debug.h"
+
+1288090721 source:e:\nutmeg0\engine\coresrc\physics\tokamak\restcontact.cpp
+	"stdio.h"
+	<windows.h>
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+
+1288090721 source:e:\nutmeg0\engine\coresrc\physics\tokamak\rigidbody.cpp
+	"stdio.h"
+	<windows.h>
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+
+1288090721 source:e:\nutmeg0\engine\coresrc\physics\tokamak\rigidbodybase.cpp
+	"stdio.h"
+	<windows.h>
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+
+1288090721 source:e:\nutmeg0\engine\coresrc\physics\tokamak\scenery.cpp
+	"math/ne_type.h"
+	"math/ne_debug.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	<windows.h>
+	"stack.h"
+	"simulator.h"
+	<math.h>
+	<stdio.h>
+
+1288090721 source:e:\nutmeg0\engine\coresrc\physics\tokamak\simulator.cpp
+	"math/ne_type.h"
+	"math/ne_debug.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"stack.h"
+	"simulator.h"
+	"scenery.h"
+	"message.h"
+	<stdio.h>
+	<windows.h>
+
+1288090721 source:e:\nutmeg0\engine\coresrc\physics\tokamak\solver.cpp
+	"math/ne_type.h"
+	"math/ne_debug.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	"stack.h"
+	"simulator.h"
+	"scenery.h"
+	"message.h"
+
+1288090721 source:e:\nutmeg0\engine\coresrc\physics\tokamak\sphere.cpp
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"collision2.h"
+	"constraint.h"
+	"rigidbody.h"
+	"Debug.h"
+	<stdio.h>
+
+1288090721 source:e:\nutmeg0\engine\coresrc\physics\tokamak\stack.cpp
+	"math/ne_type.h"
+	"math/ne_debug.h"
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"constraint.h"
+	"rigidbody.h"
+	<windows.h>
+	"stack.h"
+	"simulator.h"
+	"scenery.h"
+	<algorithm>
+	"Debug.h"
+
+1288090721 source:e:\nutmeg0\engine\coresrc\physics\tokamak\tricollision.cpp
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"collision2.h"
+	"dcd.h"
+	"Debug.h"
+	<stdio.h>
+
+1286724019 source:e:\nutmeg0\engine\coresrc\physics\tokamak\useopcode.cpp
+	<stdio.h>
+	"tokamak.h"
+	"containers.h"
+	"scenery.h"
+	"collision.h"
+	"collision2.h"
+	"constraint.h"
+	"rigidbody.h"
+	"scenery.h"
+	"stack.h"
+	"simulator.h"
+	"message.h"
+
+1308116222 source:e:\nutmeg0\engine\coresrc\render\abstractrender.cpp
+	"AbstractRender.h"
+	"Factory.h"
+	"RenderOpenGL1.h"
+	"RenderOpenGL2.h"
+	"RenderBadaOpenGL1.h"
+
+1308116262 e:\nutmeg0\engine\coresrc\render\renderopengl1.h
+
+1308116266 e:\nutmeg0\engine\coresrc\render\renderopengl2.h
+
+1308116259 e:\nutmeg0\engine\coresrc\render\renderbadaopengl1.h
+
+1308314334 source:e:\nutmeg0\engine\coresrc\render\camera.cpp
+	"Camera.h"
+	"MathCore.h"
+	"AbstractRender.h"
+
+1308116225 source:e:\nutmeg0\engine\coresrc\render\light.cpp
+	"Light.h"
+
+1308116251 e:\nutmeg0\engine\coresrc\render\light.h
+	"MathCore.h"
+
+1308116228 source:e:\nutmeg0\engine\coresrc\render\material.cpp
+	"Material.h"
+
+1308116231 source:e:\nutmeg0\engine\coresrc\render\mesh.cpp
+	"Mesh.h"
+	"File.h"
+	"Str.h"
+
+1308116256 e:\nutmeg0\engine\coresrc\render\mesh.h
+	"Stream.h"
+	"SolidArray.h"
+	"Resource.h"
+	"MathCore.h"
+
+1308116234 source:e:\nutmeg0\engine\coresrc\render\renderbadaopengl1.cpp
+	"RenderBadaOpenGL1.h"
+	"Settings.h"
+	<FBase.h>
+	<FMedia.h>
+	<FApp.h>
+	<FGraphicsOpengl.h>
+	<FGraphics.h>
+	<FSystem.h>
+	<FUi.h>
+	"Mesh.h"
+	"AbstractRender.h"
+	"Material.h"
+	"Light.h"
+
+1309435405 source:e:\nutmeg0\engine\coresrc\render\renderopengl1.cpp
+	"RenderOpenGL1.h"
+	"Debug.h"
+	"OpenGL.h"
+	"AbstractRender.h"
+	"Material.h"
+	"Light.h"
+	"il.h"
+	"ilu.h"
+	"ilut.h"
+	"Mesh.h"
+
+1291226918 e:\nutmeg0\engine\library\opengl\opengl.h
+	<windows.h>
+	"gl/glee.h"
+
+1291226918 e:\nutmeg0\engine\library\opengl\gl\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1309428240 e:\nutmeg0\engine\library\devil\il.h
+	<stdio.h>
+	<wchar.h>
+
+1309428222 e:\nutmeg0\engine\library\devil\ilu.h
+	"il.h"
+
+1309428226 e:\nutmeg0\engine\library\devil\ilut.h
+	"il.h"
+	"ilu.h"
+	"config.h"
+	"config.h"
+	<windows.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<allegro.h>
+	<SDL.h>
+	<windows.h>
+
+1291226918 e:\nutmeg0\engine\library\devil\config.h
+
+1308615144 source:e:\nutmeg0\engine\coresrc\render\renderopengl2.cpp
+	"RenderOpenGL2.h"
+	"Debug.h"
+	"OpenGL.h"
+	"AbstractRender.h"
+	"Material.h"
+	"Light.h"
+	"il.h"
+	"ilu.h"
+	"ilut.h"
+	"Mesh.h"
+
+1309018650 source:e:\nutmeg0\engine\coresrc\render\skeleton.cpp
+	"Skeleton.h"
+	<math.h>
+	"Xml.h"
+	"Console.h"
+
+1308632136 source:e:\nutmeg0\engine\coresrc\scene\bonenode.cpp
+	"BoneNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+	"Scene.h"
+	"SkinnedMeshNode.h"
+
+1308587986 e:\nutmeg0\engine\coresrc\scene\bonenode.h
+	"Node.h"
+
+1308631964 e:\nutmeg0\engine\coresrc\scene\skinnedmeshnode.h
+	"Node.h"
+	"AbstractRender.h"
+	"Skeleton.h"
+	"Array.h"
+
+1308116272 source:e:\nutmeg0\engine\coresrc\scene\cameranode.cpp
+	"CameraNode.h"
+	"AbstractRender.h"
+
+1309091754 source:e:\nutmeg0\engine\coresrc\scene\controllernode.cpp
+	"ControllerNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+	"PhysicsNode.h"
+
+1308116312 e:\nutmeg0\engine\coresrc\scene\controllernode.h
+	"Node.h"
+
+1308116332 e:\nutmeg0\engine\coresrc\scene\physicsnode.h
+	"Node.h"
+	"AbstractPhysics.h"
+	"Mesh.h"
+
+1308584952 source:e:\nutmeg0\engine\coresrc\scene\entitynode.cpp
+	"EntityNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+	"Scene.h"
+
+1308116277 source:e:\nutmeg0\engine\coresrc\scene\lightnode.cpp
+	"LightNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+
+1308116315 e:\nutmeg0\engine\coresrc\scene\lightnode.h
+	"Node.h"
+	"Light.h"
+
+1308116280 source:e:\nutmeg0\engine\coresrc\scene\meshnode.cpp
+	"MeshNode.h"
+	"AbstractRender.h"
+
+1308116317 e:\nutmeg0\engine\coresrc\scene\meshnode.h
+	"Node.h"
+	"AbstractRender.h"
+
+1308611458 source:e:\nutmeg0\engine\coresrc\scene\node.cpp
+	"Node.h"
+	"Camera.h"
+	"Xml.h"
+	"Action.h"
+	"AbstractRender.h"
+	"Scene.h"
+
+1308116052 e:\nutmeg0\engine\coresrc\common\action.h
+	"Array.h"
+
+1308116285 source:e:\nutmeg0\engine\coresrc\scene\originnode.cpp
+	"OriginNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+
+1308116324 e:\nutmeg0\engine\coresrc\scene\originnode.h
+	"Node.h"
+
+1308116290 source:e:\nutmeg0\engine\coresrc\scene\particlenode.cpp
+	"ParticleNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+
+1308116327 e:\nutmeg0\engine\coresrc\scene\particlenode.h
+	"Node.h"
+
+1308678360 source:e:\nutmeg0\engine\coresrc\scene\particlesystemnode.cpp
+	"ParticleSystemNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+
+1308673602 e:\nutmeg0\engine\coresrc\scene\particlesystemnode.h
+	"Node.h"
+
+1308116295 source:e:\nutmeg0\engine\coresrc\scene\physicsnode.cpp
+	"PhysicsNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+	"Console.h"
+	"Scene.h"
+
+1308611518 source:e:\nutmeg0\engine\coresrc\scene\scene.cpp
+	"Scene.h"
+	"AbstractRender.h"
+	"AbstractPhysics.h"
+	"Xml.h"
+	"Debug.h"
+	"CameraNode.h"
+	"OriginNode.h"
+	"TriggerNode.h"
+	"ParticleNode.h"
+	"ParticleSystemNode.h"
+	"SkinnedMeshNode.h"
+	"LightNode.h"
+	"ControllerNode.h"
+	"MeshNode.h"
+	"PhysicsNode.h"
+	"EntityNode.h"
+	"TextNode.h"
+	"BoneNode.h"
+
+1308116343 e:\nutmeg0\engine\coresrc\scene\triggernode.h
+	"Node.h"
+
+1308116342 e:\nutmeg0\engine\coresrc\scene\textnode.h
+	"Node.h"
+
+1308787130 source:e:\nutmeg0\engine\coresrc\scene\skinnedmeshnode.cpp
+	"SkinnedMeshNode.h"
+	"AbstractRender.h"
+	"Console.h"
+
+1308403268 source:e:\nutmeg0\engine\coresrc\scene\textnode.cpp
+	"TextNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+
+1308116307 source:e:\nutmeg0\engine\coresrc\scene\triggernode.cpp
+	"TriggerNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+	"Scene.h"
+
+1291226918 source:e:\nutmeg0\engine\library\opengl\opengl.cpp
+	"OpenGL.h"
+	"GL/GLee.c"
+
+1291226918 e:\nutmeg0\engine\library\opengl\gl\glee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"GLee.h"
+	<Carbon/Carbon.h>
+
+1309435721 source:e:\nutmeg0\samples\cbtemplate\source\main.cpp
+	"Nutmeg.h"
+
+1308584194 e:\nutmeg0\engine\coresrc\nutmeg.h
+	"Debug.h"
+	"Array.h"
+	"SolidArray.h"
+	"MathCore.h"
+	"Engine.h"
+	"AbstractRender.h"
+	"AbstractCore.h"
+	"Camera.h"
+	"PhysicsNode.h"
+	"SkinnedMeshNode.h"
+	"TriggerNode.h"
+	"CameraNode.h"
+	"ParticleSystemNode.h"
+	"BoneNode.h"
+	"EntityNode.h"
+	"Scene.h"
+
+1311691298 e:\nutmeg\engine\coresrc\common\libapi.h
+
+1311691297 e:\nutmeg\engine\coresrc\engine\subsystem.h
+	"Application.h"
+	"Factory.h"
+	"LibApi.h"
+
+1311692672 e:\nutmeg\engine\coresrc\engine\application.h
+	"LibApi.h"
+
+1311692667 source:e:\nutmeg\engine\coresrc\engine\application.cpp
+	"Application.h"
+	<stdio.h>
+	"Debug.h"
+	"Engine.h"
+
+1311691297 source:e:\nutmeg\engine\coresrc\engine\subsystem.cpp
+	"Subsystem.h"
+
+1311165298 source:e:\nutmeg\engine\coresrc\core\abstractcore.h
+	"Subsystem.h"
+	"Input.h"
+	"LibApi.h"
+
+1311668758 source:e:\nutmeg\engine\subsystems\core\badacore.cpp
+	"BadaCore.h"
+	"Settings.h"
+	"Debug.h"
+	<FBase.h>
+	<FGraphics.h>
+	<FApp.h>
+	<FGraphicsOpenGL.h>
+	<FSystem.h>
+	<FUi.h>
+	<math.h>
+	<FUixSensorManager.h>
+	<FUixSensorTypes.h>
+	"Engine.h"
+	"AbstractCore.h"
+
+1311668758 e:\nutmeg\engine\subsystems\core\badacore.h
+
+1311668758 source:e:\nutmeg\engine\subsystems\core\windowscore.cpp
+	"WindowsCore.h"
+	"Assert.h"
+	"Str.h"
+	"Engine.h"
+	"Log.h"
+	"Console.h"
+	"AbstractRender.h"
+	<windows.h>
+	"Timer.h"
+	"AbstractCore.h"
+	<windows.h>
+
+1311668758 e:\nutmeg\engine\subsystems\core\windowscore.h
+
+1311691308 source:e:\nutmeg\engine\subsystems\audio\audiobada.cpp
+	"AudioBada.h"
+	"Settings.h"
+	"AbstractAudio.h"
+	"Str.h"
+	<FBase.h>
+	<FMedia.h>
+
+1311691308 e:\nutmeg\engine\subsystems\audio\audiobada.h
+	"LibApi.h"
+
+1311691308 source:e:\nutmeg\engine\subsystems\audio\audiosquall.cpp
+	"AudioSquall.h"
+	"Settings.h"
+	"AbstractAudio.h"
+	"Str.h"
+	"Squall.h"
+	"Timer.h"
+	"Resource.h"
+
+1311691308 e:\nutmeg\engine\subsystems\audio\audiosquall.h
+	"LibApi.h"
+
+1311673908 e:\nutmeg\engine\subsystems\core\corewindows.h
+
+1311692278 source:e:\nutmeg\engine\subsystems\platform\platformbada.cpp
+	"PlatformBada.h"
+	"Settings.h"
+	"Debug.h"
+	<FBase.h>
+	<FGraphics.h>
+	<FApp.h>
+	<FGraphicsOpenGL.h>
+	<FSystem.h>
+	<FUi.h>
+	<math.h>
+	<FUixSensorManager.h>
+	<FUixSensorTypes.h>
+	"Engine.h"
+	"AbstractPlatform.h"
+
+1311692278 e:\nutmeg\engine\subsystems\platform\platformbada.h
+
+1311692278 source:e:\nutmeg\engine\subsystems\platform\platformwindows.cpp
+	"PlatformWindows.h"
+	"Assert.h"
+	"Str.h"
+	"Engine.h"
+	"Log.h"
+	"Console.h"
+	"AbstractRender.h"
+	<windows.h>
+	"Timer.h"
+	"AbstractPlatform.h"
+	<windows.h>
+
+1311692278 e:\nutmeg\engine\subsystems\platform\platformwindows.h
+
+1311692390 e:\nutmeg\engine\coresrc\platform\input.h
+	"LibApi.h"
+
+1311692736 e:\nutmeg\engine\coresrc\platform\abstractplatform.h
+	"Subsystem.h"
+	"Input.h"
+	"LibApi.h"
+
+1311692390 source:e:\nutmeg\engine\coresrc\platform\abstractplatform.cpp
+	"AbstractPlatform.h"
+	"Factory.h"
+
+1311925745 source:e:\nutmeg\engine\coresrc\platform\input.cpp
+	"Input.h"
+	"Str.h"
+
+1311686998 source:z:\numedev\engine\coresrc\audio\abstractaudio.cpp
+	"AbstractAudio.h"
+	"Factory.h"
+
+1311686998 z:\numedev\engine\coresrc\audio\abstractaudio.h
+	"Subsystem.h"
+	"LibApi.h"
+
+1311686998 z:\numedev\engine\coresrc\engine\subsystem.h
+	"Application.h"
+	"Factory.h"
+	"LibApi.h"
+
+1312220296 z:\numedev\engine\coresrc\engine\application.h
+	"LibApi.h"
+
+1311069599 z:\numedev\engine\coresrc\common\libapi.h
+
+1311069599 z:\numedev\engine\coresrc\common\factory.h
+
+1311069599 source:z:\numedev\engine\coresrc\common\debug.cpp
+
+1311069599 source:z:\numedev\engine\coresrc\common\file.cpp
+
+1311069599 source:z:\numedev\engine\coresrc\common\log.cpp
+
+1311162935 source:z:\numedev\engine\coresrc\common\resource.cpp
+
+1311069599 source:z:\numedev\engine\coresrc\common\str.cpp
+
+1311069599 source:z:\numedev\engine\coresrc\common\xml.cpp
+
+1312220296 source:z:\numedev\engine\coresrc\engine\application.cpp
+	"Application.h"
+	<stdio.h>
+	"Debug.h"
+	"Engine.h"
+
+1311069599 z:\numedev\engine\coresrc\common\debug.h
+
+1311686998 z:\numedev\engine\coresrc\engine\engine.h
+	"Application.h"
+	"LibApi.h"
+	"Str.h"
+
+1311069599 z:\numedev\engine\coresrc\common\str.h
+
+1312220296 source:z:\numedev\engine\coresrc\engine\console.cpp
+	"Console.h"
+	"AbstractRender.h"
+	"Input.h"
+
+1312220296 z:\numedev\engine\coresrc\engine\console.h
+	"Str.h"
+	"Map.h"
+	"Array.h"
+	"MathCore.h"
+	"Subsystem.h"
+	"Resource.h"
+	"LibApi.h"
+
+1311069599 z:\numedev\engine\coresrc\common\map.h
+
+1311069599 z:\numedev\engine\coresrc\common\array.h
+
+1312220296 z:\numedev\engine\coresrc\math\mathcore.h
+	<math.h>
+	"LibApi.h"
+
+1311162935 z:\numedev\engine\coresrc\common\resource.h
+
+1311686998 z:\numedev\engine\coresrc\render\abstractrender.h
+	"MathCore.h"
+	"Skeleton.h"
+	"LibApi.h"
+
+1312220291 z:\numedev\engine\coresrc\render\skeleton.h
+	"MathCore.h"
+	"SolidArray.h"
+	"Resource.h"
+	"Str.h"
+	"AbstractAudio.h"
+	"LibApi.h"
+
+1311069599 z:\numedev\engine\coresrc\common\solidarray.h
+
+1312220296 z:\numedev\engine\coresrc\platform\input.h
+	"LibApi.h"
+
+1312220296 source:z:\numedev\engine\coresrc\engine\engine.cpp
+	"Engine.h"
+	<stdio.h>
+	"Assert.h"
+	"Log.h"
+	"Scene.h"
+	"AbstractPlatform.h"
+	"AbstractRender.h"
+	"AbstractAudio.h"
+	"AbstractPhysics.h"
+	"Console.h"
+	"Profiler.h"
+	"Resource.h"
+
+1311069599 z:\numedev\engine\coresrc\common\log.h
+
+1312220296 z:\numedev\engine\coresrc\scene\scene.h
+	"Node.h"
+	"Array.h"
+	"Stream.h"
+	"Factory.h"
+	"Material.h"
+	"LibApi.h"
+
+1311069602 z:\numedev\engine\coresrc\scene\node.h
+	"MathCore.h"
+	"Str.h"
+	"LibApi.h"
+
+1311069599 z:\numedev\engine\coresrc\common\stream.h
+
+1311069593 z:\numedev\engine\coresrc\render\material.h
+	"AbstractRender.h"
+	"MathCore.h"
+	"AbstractRender.h"
+	"LibApi.h"
+
+1312220296 z:\numedev\engine\coresrc\platform\abstractplatform.h
+	"Subsystem.h"
+	"Input.h"
+	"LibApi.h"
+
+1311069598 z:\numedev\engine\coresrc\physics\abstractphysics.h
+	"MathCore.h"
+	"Str.h"
+	"LibApi.h"
+
+1311069598 z:\numedev\engine\coresrc\engine\profiler.h
+	"Timer.h"
+	"Array.h"
+	"Str.h"
+	"MathCore.h"
+	"Subsystem.h"
+	"LibApi.h"
+
+1311069598 z:\numedev\engine\coresrc\engine\timer.h
+	"LibApi.h"
+
+1311069598 source:z:\numedev\engine\coresrc\engine\profiler.cpp
+	"Profiler.h"
+	"AbstractRender.h"
+
+1311162935 source:z:\numedev\engine\coresrc\engine\subsystem.cpp
+	"Subsystem.h"
+
+1311069598 source:z:\numedev\engine\coresrc\engine\timer.cpp
+	"Timer.h"
+	"Settings.h"
+	<FSysSystemTime.h>
+	<windows.h>
+
+1311069720 z:\numedev\samples\cbtemplate\source\settings.h
+
+1312220296 source:z:\numedev\engine\coresrc\game\entity.cpp
+	"Entity.h"
+	"Debug.h"
+	"EntityNode.h"
+	"Level.h"
+	"Game.h"
+
+1312220296 z:\numedev\engine\coresrc\game\entity.h
+	"Game.h"
+	"Entity.h"
+	"LibApi.h"
+
+1312220296 z:\numedev\engine\coresrc\game\game.h
+	"Factory.h"
+	"LibApi.h"
+	"Subsystem.h"
+
+1312220296 z:\numedev\engine\coresrc\scene\entitynode.h
+	"Node.h"
+	"Map.h"
+	"Resource.h"
+	"LibApi.h"
+
+1312220296 z:\numedev\engine\coresrc\game\level.h
+	"Str.h"
+	"Scene.h"
+	"LibApi.h"
+
+1312220296 source:z:\numedev\engine\coresrc\game\game.cpp
+	"Game.h"
+	"Level.h"
+	"Entity.h"
+	"Xml.h"
+
+1311069599 z:\numedev\engine\coresrc\common\xml.h
+
+1312220296 source:z:\numedev\engine\coresrc\game\level.cpp
+	"Level.h"
+	"EntityNode.h"
+	"Game.h"
+	"Entity.h"
+	"Camera.h"
+	"Console.h"
+	"CameraNode.h"
+
+1311069593 z:\numedev\engine\coresrc\render\camera.h
+	"MathCore.h"
+	"LibApi.h"
+
+1311069602 z:\numedev\engine\coresrc\scene\cameranode.h
+	"Node.h"
+	"Camera.h"
+	"LibApi.h"
+
+1312220296 source:z:\numedev\engine\coresrc\math\mathcore.cpp
+	"MathCore.h"
+	<stdio.h>
+	<string.h>
+	<math.h>
+	<stdlib.h>
+	<time.h>
+	"Debug.h"
+
+1311069598 source:z:\numedev\engine\coresrc\physics\abstractphysics.cpp
+	"Factory.h"
+	"PhysicsNewton.h"
+
+1311069598 z:\numedev\engine\coresrc\physics\physicsnewton.h
+	"AbstractPhysics.h"
+
+1311265871 source:z:\numedev\engine\coresrc\physics\physicsnewton.cpp
+	"PhysicsNewton.h"
+	"Settings.h"
+	"Debug.h"
+	"Newton.h"
+	"Array.h"
+
+1311070080 z:\numedev\engine\library\newton\newton.h
+
+1312220296 source:z:\numedev\engine\coresrc\platform\abstractplatform.cpp
+	"AbstractPlatform.h"
+	"Factory.h"
+
+1312220296 source:z:\numedev\engine\coresrc\platform\input.cpp
+	"Input.h"
+	"Str.h"
+
+1311265871 source:z:\numedev\engine\coresrc\render\abstractrender.cpp
+	"AbstractRender.h"
+	"Factory.h"
+	"RenderOpenGL1.h"
+	"RenderOpenGL2.h"
+	"RenderBadaOpenGL1.h"
+
+1311069593 z:\numedev\engine\coresrc\render\renderopengl1.h
+
+1311069593 z:\numedev\engine\coresrc\render\renderopengl2.h
+
+1311069593 z:\numedev\engine\coresrc\render\renderbadaopengl1.h
+
+1311069593 source:z:\numedev\engine\coresrc\render\camera.cpp
+	"Camera.h"
+	"MathCore.h"
+	"AbstractRender.h"
+
+1311069593 source:z:\numedev\engine\coresrc\render\light.cpp
+	"Light.h"
+
+1311069593 z:\numedev\engine\coresrc\render\light.h
+	"MathCore.h"
+	"LibApi.h"
+
+1311069593 source:z:\numedev\engine\coresrc\render\material.cpp
+	"Material.h"
+
+1311069593 source:z:\numedev\engine\coresrc\render\mesh.cpp
+	"Mesh.h"
+	"File.h"
+	"Str.h"
+
+1311069593 z:\numedev\engine\coresrc\render\mesh.h
+	"Stream.h"
+	"SolidArray.h"
+	"Resource.h"
+	"MathCore.h"
+	"LibApi.h"
+
+1311069599 z:\numedev\engine\coresrc\common\file.h
+
+1311069593 source:z:\numedev\engine\coresrc\render\renderbadaopengl1.cpp
+	"RenderBadaOpenGL1.h"
+	"Settings.h"
+	<FBase.h>
+	<FMedia.h>
+	<FApp.h>
+	<FGraphicsOpengl.h>
+	<FGraphics.h>
+	<FSystem.h>
+	<FUi.h>
+	"Mesh.h"
+	"AbstractRender.h"
+	"Material.h"
+	"Light.h"
+
+1312220291 source:z:\numedev\engine\coresrc\render\renderopengl1.cpp
+	"RenderOpenGL1.h"
+	"Debug.h"
+	"OpenGL.h"
+	"AbstractRender.h"
+	"Material.h"
+	"Light.h"
+	"il.h"
+	"ilu.h"
+	"ilut.h"
+	"Mesh.h"
+
+1311069627 z:\numedev\engine\library\opengl\opengl.h
+	<windows.h>
+	"gl/glee.h"
+
+1311069627 z:\numedev\engine\library\opengl\gl\glee.h
+	<windows.h>
+	<GL/gl.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<stddef.h>
+
+1311069622 z:\numedev\engine\library\devil\il.h
+	<stdio.h>
+	<wchar.h>
+
+1311069622 z:\numedev\engine\library\devil\ilu.h
+	"il.h"
+
+1311069622 z:\numedev\engine\library\devil\ilut.h
+	"il.h"
+	"ilu.h"
+	"config.h"
+	"config.h"
+	<windows.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<allegro.h>
+	<SDL.h>
+	<windows.h>
+
+1311069622 z:\numedev\engine\library\devil\config.h
+
+1312220291 source:z:\numedev\engine\coresrc\render\renderopengl2.cpp
+	"RenderOpenGL2.h"
+	"Debug.h"
+	"OpenGL.h"
+	"AbstractRender.h"
+	"Material.h"
+	"Light.h"
+	"il.h"
+	"ilu.h"
+	"ilut.h"
+	"Mesh.h"
+
+1312220291 source:z:\numedev\engine\coresrc\render\skeleton.cpp
+	"Skeleton.h"
+	<math.h>
+	"Xml.h"
+	"Console.h"
+
+1312220296 source:z:\numedev\engine\coresrc\scene\bonenode.cpp
+	"BoneNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+	"Scene.h"
+	"SkinnedMeshNode.h"
+
+1311069602 z:\numedev\engine\coresrc\scene\bonenode.h
+	"Node.h"
+	"LibApi.h"
+
+1311069602 z:\numedev\engine\coresrc\scene\skinnedmeshnode.h
+	"Node.h"
+	"AbstractRender.h"
+	"Skeleton.h"
+	"Array.h"
+	"LibApi.h"
+
+1311069602 source:z:\numedev\engine\coresrc\scene\cameranode.cpp
+	"CameraNode.h"
+	"AbstractRender.h"
+
+1312220296 source:z:\numedev\engine\coresrc\scene\controllernode.cpp
+	"ControllerNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+	"PhysicsNode.h"
+
+1311069602 z:\numedev\engine\coresrc\scene\controllernode.h
+	"Node.h"
+	"LibApi.h"
+
+1311686998 z:\numedev\engine\coresrc\scene\physicsnode.h
+	"Node.h"
+	"LibApi.h"
+	"AbstractPhysics.h"
+	"Mesh.h"
+
+1312220296 source:z:\numedev\engine\coresrc\scene\entitynode.cpp
+	"EntityNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+	"Scene.h"
+
+1311069602 source:z:\numedev\engine\coresrc\scene\lightnode.cpp
+	"LightNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+
+1311069602 z:\numedev\engine\coresrc\scene\lightnode.h
+	"Node.h"
+	"Light.h"
+	"LibApi.h"
+
+1311686998 source:z:\numedev\engine\coresrc\scene\meshnode.cpp
+	"MeshNode.h"
+	"AbstractRender.h"
+
+1311069602 z:\numedev\engine\coresrc\scene\meshnode.h
+	"Node.h"
+	"AbstractRender.h"
+	"LibApi.h"
+
+1312220296 source:z:\numedev\engine\coresrc\scene\node.cpp
+	"Node.h"
+	"Camera.h"
+	"Xml.h"
+	"Action.h"
+	"AbstractRender.h"
+	"Scene.h"
+
+1311069599 z:\numedev\engine\coresrc\common\action.h
+
+1311069602 source:z:\numedev\engine\coresrc\scene\originnode.cpp
+	"OriginNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+
+1311069602 z:\numedev\engine\coresrc\scene\originnode.h
+	"Node.h"
+	"LibApi.h"
+
+1311265871 source:z:\numedev\engine\coresrc\scene\particlenode.cpp
+	"ParticleNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+
+1311069602 z:\numedev\engine\coresrc\scene\particlenode.h
+	"Node.h"
+	"LibApi.h"
+
+1312220296 source:z:\numedev\engine\coresrc\scene\particlesystemnode.cpp
+	"ParticleSystemNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+
+1312220296 z:\numedev\engine\coresrc\scene\particlesystemnode.h
+	"Node.h"
+	"LibApi.h"
+
+1311686998 source:z:\numedev\engine\coresrc\scene\physicsnode.cpp
+	"PhysicsNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+	"Console.h"
+	"Scene.h"
+
+1312220296 source:z:\numedev\engine\coresrc\scene\scene.cpp
+	"Scene.h"
+	"AbstractRender.h"
+	"AbstractPhysics.h"
+	"Xml.h"
+	"Debug.h"
+	"CameraNode.h"
+	"OriginNode.h"
+	"TriggerNode.h"
+	"ParticleNode.h"
+	"ParticleSystemNode.h"
+	"SkinnedMeshNode.h"
+	"LightNode.h"
+	"ControllerNode.h"
+	"MeshNode.h"
+	"PhysicsNode.h"
+	"EntityNode.h"
+	"TextNode.h"
+	"BoneNode.h"
+	"Engine.h"
+
+1311265871 z:\numedev\engine\coresrc\scene\triggernode.h
+	"Node.h"
+	"LibApi.h"
+
+1311069602 z:\numedev\engine\coresrc\scene\textnode.h
+	"Node.h"
+	"LibApi.h"
+
+1311069602 source:z:\numedev\engine\coresrc\scene\skinnedmeshnode.cpp
+	"SkinnedMeshNode.h"
+	"AbstractRender.h"
+	"Console.h"
+
+1311265871 source:z:\numedev\engine\coresrc\scene\textnode.cpp
+	"TextNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+
+1311069602 source:z:\numedev\engine\coresrc\scene\triggernode.cpp
+	"TriggerNode.h"
+	"AbstractRender.h"
+	"Camera.h"
+	"Scene.h"
+
+1311265871 source:z:\numedev\engine\library\opengl\opengl.cpp
+	"OpenGL.h"
+	"GL/GLee.c"
+
+1311069627 z:\numedev\engine\library\opengl\gl\glee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"GLee.h"
+	<Carbon/Carbon.h>
+
+1311686998 source:z:\numedev\engine\subsystems\audio\audiobada.cpp
+	"AudioBada.h"
+	"Settings.h"
+	"AbstractAudio.h"
+	"Str.h"
+	<FBase.h>
+	<FMedia.h>
+
+1311686998 z:\numedev\engine\subsystems\audio\audiobada.h
+	"LibApi.h"
+
+1311686998 source:z:\numedev\engine\subsystems\audio\audiosquall.cpp
+	"AudioSquall.h"
+	"Settings.h"
+	"AbstractAudio.h"
+	"Str.h"
+	"Squall.h"
+	"Timer.h"
+	"Resource.h"
+
+1311686998 z:\numedev\engine\subsystems\audio\audiosquall.h
+	"LibApi.h"
+
+1311069621 z:\numedev\engine\library\squall\squall.h
+
+1312220301 source:z:\numedev\engine\subsystems\platform\platformbada.cpp
+	"PlatformBada.h"
+	"Settings.h"
+	"Debug.h"
+	<FBase.h>
+	<FGraphics.h>
+	<FApp.h>
+	<FGraphicsOpenGL.h>
+	<FSystem.h>
+	<FUi.h>
+	<math.h>
+	<FUixSensorManager.h>
+	<FUixSensorTypes.h>
+	"Engine.h"
+	"AbstractPlatform.h"
+
+1312220301 z:\numedev\engine\subsystems\platform\platformbada.h
+
+1312220301 source:z:\numedev\engine\subsystems\platform\platformwindows.cpp
+	"PlatformWindows.h"
+	"Assert.h"
+	"Str.h"
+	"Engine.h"
+	"Log.h"
+	"Console.h"
+	"AbstractRender.h"
+	<windows.h>
+	"Timer.h"
+	"AbstractPlatform.h"
+	<windows.h>
+
+1312220301 z:\numedev\engine\subsystems\platform\platformwindows.h
+
+1312220148 source:z:\numedev\samples\cbtemplate\source\main.cpp
+	"Nutmeg.h"
+	"RenderOpenGL1.h"
+	"PlatformWindows.h"
+	"AudioSquall.h"
+
+1312220296 z:\numedev\engine\coresrc\nutmeg.h
+	"Debug.h"
+	"Array.h"
+	"SolidArray.h"
+	"MathCore.h"
+	"Resource.h"
+	"Application.h"
+	"Engine.h"
+	"Camera.h"
+	"Console.h"
+	"Profiler.h"
+	"AbstractRender.h"
+	"AbstractPlatform.h"
+	"AbstractAudio.h"
+	"Scene.h"
+	"PhysicsNode.h"
+	"SkinnedMeshNode.h"
+	"TriggerNode.h"
+	"OriginNode.h"
+	"MeshNode.h"
+	"CameraNode.h"
+	"ParticleSystemNode.h"
+	"BoneNode.h"
+	"EntityNode.h"
+	"Entity.h"
+	"Level.h"
+	"Game.h"
+

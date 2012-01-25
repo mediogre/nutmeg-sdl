@@ -1,0 +1,68 @@
+<scene version="0" relative_paths="1">
+	<info>
+		<caption>Scene</caption>
+		<description>Nutmeg::Core Engine Scene</description>
+		<copyright>Nutmeg::Core Engine. Copyright (c) One More Studio, 2008 - 2009</copyright>
+	</info>
+	<environment>
+		<ambient>0.3 0.3 0.3</ambient>
+	</environment>
+	<materials>
+		<material name="material0">
+			<diffuse color="0.9999708 0.9999708 0.9999708">core/textures/checker.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+	</materials>
+	<nodes>
+		<node type="origin" name="scene_origin">
+			<children>
+				<node type="physics" name="physics" material="0">
+					<transform pos="0 -1 0" scale="31 15 1"/>
+					<init_transform pos="0 -1 0" scale="31 15 1"/>
+				</node>
+				<node type="physics" name="physics1" material="0">
+					<transform pos="0.5 1 1"/>
+					<init_transform pos="0.5 1 1"/>
+					<mass>19</mass>
+				</node>
+				<node type="physics" name="physics3" material="0">
+					<transform pos="0.5 -0.5 1"/>
+					<init_transform pos="0.5 -0.5 1"/>
+					<mass>19</mass>
+				</node>
+				<node type="physics" name="physics5" material="0">
+					<transform pos="0.5 -2 1"/>
+					<init_transform pos="0.5 -2 1"/>
+					<mass>19</mass>
+				</node>
+				<node type="physics" name="physics7" material="0">
+					<transform pos="0.5 -1.25 2"/>
+					<init_transform pos="0.5 -1.25 2"/>
+					<mass>19</mass>
+				</node>
+				<node type="physics" name="physics9" material="0">
+					<transform pos="0.5 0.25 2"/>
+					<init_transform pos="0.5 0.25 2"/>
+					<mass>19</mass>
+				</node>
+				<node type="physics" name="physics11" material="0">
+					<transform pos="0.5 -0.5 3"/>
+					<init_transform pos="0.5 -0.5 3"/>
+					<mass>19</mass>
+				</node>
+				<node type="physics" name="physics13" material="0">
+					<transform pos="-9.75 -1 0" rot="0 -0.2588191 0 -0.9659258" scale="31 15 1"/>
+					<init_transform pos="-9.75 -1 0" rot="0 -0.2588191 0 -0.9659259" scale="31 15 1"/>
+				</node>
+				<node type="physics" name="physics15" material="0">
+					<transform pos="-18.5 -0.5 8.5"/>
+					<init_transform pos="-18.5 -0.5 8.5"/>
+					<body>2</body>
+					<mass>100</mass>
+				</node>
+			</children>
+		</node>
+	</nodes>
+</scene>

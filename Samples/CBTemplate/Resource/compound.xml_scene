@@ -1,0 +1,194 @@
+<scene version="0" relative_paths="1">
+	<info>
+		<caption>Scene</caption>
+		<description>Nutmeg::Core Engine Scene</description>
+		<copyright>Nutmeg::Core Engine. Copyright (c) One More Studio, 2008 - 2009</copyright>
+	</info>
+	<environment>
+		<ambient>0.3 0.3 0.3</ambient>
+	</environment>
+	<materials>
+		<material name="material0">
+			<diffuse color="0.9999708 0.9999708 0.9999708">core/textures/checker.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+	</materials>
+	<nodes>
+		<node type="origin" name="scene_origin">
+			<children>
+				<node type="physics" name="physics" material="0">
+					<transform pos="-1.5 0 -2" scale="17.64 33.32 1"/>
+					<init_transform pos="-1.5 0 -2" scale="17.64 33.32 1"/>
+					<children>
+						<node type="physics" name="physics11" material="0">
+							<transform pos="0.4235957 0 0" rot="0 0.4362832 0 -0.8998094" scale="1.610536 1 0.07213045"/>
+							<init_transform pos="0.4235957 0 0" rot="0 0.4362832 0 -0.8998094" scale="1.610536 1 0.07213045"/>
+						</node>
+						<node type="physics" name="physics13" material="0">
+							<transform pos="-0.4379556 0 0" rot="0 0.8842859 0 -0.466946" scale="1.610536 1 0.07213045"/>
+							<init_transform pos="-0.4379556 0 0" rot="0 0.8842859 0 -0.466946" scale="1.610536 1 0.07213045"/>
+						</node>
+						<node type="physics" name="physics15" material="0">
+							<transform pos="0.0967413 -0.3541197 0" rot="0.4270087 0 0 -0.9042475" scale="1.610536 1 0.07213045"/>
+							<init_transform pos="0.0967413 -0.3541197 0" rot="0.4270087 0 0 -0.9042475" scale="1.610536 1 0.07213045"/>
+						</node>
+						<node type="physics" name="physics17" material="0">
+							<transform pos="0.0967413 0.3373575 0" rot="0.878814 0 0 -0.4771645" scale="1.610536 1 0.07213045"/>
+							<init_transform pos="0.0967413 0.3373575 0" rot="0.878814 0 0 -0.4771645" scale="1.610536 1 0.07213045"/>
+						</node>
+					</children>
+				</node>
+				<node type="light" name="light">
+					<transform pos="3.5 -2.5 9.440701"/>
+					<radius>31.89948</radius>
+				</node>
+				<node type="physics" name="physics48" material="0">
+					<transform pos="0 -6 0.5" rot="5.484169e-05 -0.0004952162 -0.000133486 -0.9999999" scale="1.8 3.6 0.2"/>
+					<init_transform pos="0 -6 0.5" rot="5.484169e-05 -0.0004952162 -0.000133486 -0.9999999" scale="1.8 3.6 0.2"/>
+					<mass>6</mass>
+					<children>
+						<node type="physics" name="physics50" material="0">
+							<transform pos="-0.3888889 0.4444443 -5.000001" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="-0.3888889 0.4444443 -5.000001" scale="0.1111111 0.05555556 9"/>
+						</node>
+						<node type="physics" name="physics52" material="0">
+							<transform pos="0.3888889 0.4444443 -5.000001" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="0.3888889 0.4444443 -5.000001" scale="0.1111111 0.05555556 9"/>
+						</node>
+						<node type="physics" name="physics54" material="0">
+							<transform pos="-0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="-0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+						</node>
+						<node type="physics" name="physics56" material="0">
+							<transform pos="0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+						</node>
+					</children>
+				</node>
+				<node type="physics" name="physics68" material="0">
+					<transform pos="0 -1 0.5" rot="5.484173e-05 -0.0004952166 -0.0001334861 -0.9999999" scale="1.8 3.6 0.2"/>
+					<init_transform pos="0 -1 0.5" rot="5.484173e-05 -0.0004952166 -0.0001334861 -0.9999999" scale="1.8 3.6 0.2"/>
+					<mass>6</mass>
+					<children>
+						<node type="physics" name="physics70" material="0">
+							<transform pos="-0.277005 0.4167342 -5.00165" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="-0.277005 0.4167342 -5.00165" scale="0.1111111 0.05555556 9"/>
+						</node>
+						<node type="physics" name="physics72" material="0">
+							<transform pos="0.3888889 0.4444443 -5.000001" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="0.3888889 0.4444443 -5.000001" scale="0.1111111 0.05555556 9"/>
+						</node>
+						<node type="physics" name="physics74" material="0">
+							<transform pos="-0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="-0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+						</node>
+						<node type="physics" name="physics76" material="0">
+							<transform pos="0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+						</node>
+					</children>
+				</node>
+				<node type="physics" name="physics78" material="0">
+					<transform pos="0 -3.5 2.5" rot="5.484173e-05 -0.0004952172 -0.0001334862 -0.9999999" scale="1.8 3.6 0.2"/>
+					<init_transform pos="0 -3.5 2.5" rot="5.484173e-05 -0.0004952172 -0.0001334862 -0.9999999" scale="1.8 3.6 0.2"/>
+					<mass>6</mass>
+					<children>
+						<node type="physics" name="physics80" material="0">
+							<transform pos="-0.277005 0.4167342 -5.00165" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="-0.277005 0.4167342 -5.00165" scale="0.1111111 0.05555556 9"/>
+						</node>
+						<node type="physics" name="physics82" material="0">
+							<transform pos="0.3888889 0.4444443 -5.000001" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="0.3888889 0.4444443 -5.000001" scale="0.1111111 0.05555556 9"/>
+						</node>
+						<node type="physics" name="physics84" material="0">
+							<transform pos="-0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="-0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+						</node>
+						<node type="physics" name="physics86" material="0">
+							<transform pos="0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+						</node>
+					</children>
+				</node>
+				<node type="physics" name="physics88" material="0">
+					<transform pos="0 4 0.5" rot="5.484173e-05 -0.0004952173 -0.0001334862 -0.9999999" scale="1.8 3.6 0.2"/>
+					<init_transform pos="0 4 0.5" rot="5.484173e-05 -0.0004952173 -0.0001334862 -0.9999999" scale="1.8 3.6 0.2"/>
+					<mass>6</mass>
+					<children>
+						<node type="physics" name="physics90" material="0">
+							<transform pos="-0.277005 0.4167342 -5.00165" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="-0.277005 0.4167342 -5.00165" scale="0.1111111 0.05555556 9"/>
+						</node>
+						<node type="physics" name="physics92" material="0">
+							<transform pos="0.3888889 0.4444443 -5.000001" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="0.3888889 0.4444443 -5.000001" scale="0.1111111 0.05555556 9"/>
+						</node>
+						<node type="physics" name="physics94" material="0">
+							<transform pos="-0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="-0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+						</node>
+						<node type="physics" name="physics96" material="0">
+							<transform pos="0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+						</node>
+					</children>
+				</node>
+				<node type="physics" name="physics98" material="0">
+					<transform pos="0 1.5 2.5" rot="5.484173e-05 -0.000495218 -0.0001334864 -0.9999999" scale="1.8 3.6 0.2"/>
+					<init_transform pos="0 1.5 2.5" rot="5.484173e-05 -0.000495218 -0.0001334864 -0.9999999" scale="1.8 3.6 0.2"/>
+					<mass>6</mass>
+					<children>
+						<node type="physics" name="physics100" material="0">
+							<transform pos="-0.277005 0.4167342 -5.00165" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="-0.277005 0.4167342 -5.00165" scale="0.1111111 0.05555556 9"/>
+						</node>
+						<node type="physics" name="physics102" material="0">
+							<transform pos="0.3888889 0.4444443 -5.000001" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="0.3888889 0.4444443 -5.000001" scale="0.1111111 0.05555556 9"/>
+						</node>
+						<node type="physics" name="physics104" material="0">
+							<transform pos="-0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="-0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+						</node>
+						<node type="physics" name="physics106" material="0">
+							<transform pos="0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+						</node>
+					</children>
+				</node>
+				<node type="physics" name="physics108" material="0">
+					<transform pos="0 -1 4.5" rot="5.484173e-05 -0.0004952173 -0.0001334862 -0.9999999" scale="1.8 3.6 0.2"/>
+					<init_transform pos="0 -1 4.5" rot="5.484173e-05 -0.0004952173 -0.0001334862 -0.9999999" scale="1.8 3.6 0.2"/>
+					<mass>6</mass>
+					<children>
+						<node type="physics" name="physics110" material="0">
+							<transform pos="-0.3888889 0.4444443 -5.000001" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="-0.3888889 0.4444443 -5.000001" scale="0.1111111 0.05555556 9"/>
+						</node>
+						<node type="physics" name="physics112" material="0">
+							<transform pos="0.3888889 0.4444443 -5.000001" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="0.3888889 0.4444443 -5.000001" scale="0.1111111 0.05555556 9"/>
+						</node>
+						<node type="physics" name="physics114" material="0">
+							<transform pos="-0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="-0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+						</node>
+						<node type="physics" name="physics116" material="0">
+							<transform pos="0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+							<init_transform pos="0.3888889 -0.4444445 -5.000001" scale="0.1111111 0.05555556 9"/>
+						</node>
+					</children>
+				</node>
+				<node type="physics" name="physics117" material="0">
+					<transform pos="-12 -1 11" scale="2.94 2.94 2.94"/>
+					<init_transform pos="-12 -1 11" scale="2.94 2.94 2.94"/>
+					<body>2</body>
+					<mass>86</mass>
+				</node>
+			</children>
+		</node>
+	</nodes>
+</scene>

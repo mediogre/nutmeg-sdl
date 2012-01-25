@@ -1,0 +1,56 @@
+<scene version="0" relative_paths="1">
+	<info>
+		<caption>Scene</caption>
+		<description>Nutmeg::Core Engine Scene</description>
+		<copyright>Nutmeg::Core Engine. Copyright (c) One More Studio, 2008 - 2009</copyright>
+	</info>
+	<environment>
+		<ambient>0.3 0.3 0.3</ambient>
+	</environment>
+	<materials>
+		<material name="material0">
+			<diffuse color="5.309891 5.309891 5.309891">cat_d.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+		<material name="material1">
+			<diffuse color="1.856181 1.856181 1.856181">fire.png</diffuse>
+			<specular color="0.9976614 0.9976614 0.9976614">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+			<depth_mask>0</depth_mask>
+			<blending>3</blending>
+		</material>
+	</materials>
+	<nodes>
+		<node type="origin" name="scene_origin">
+			<children>
+				<node type="mesh" name="mesh" material="0">
+					<transform pos="0 0.5 1"/>
+					<mesh>cat.mesh</mesh>
+				</node>
+				<node type="particle_system" name="particle_system" material="1">
+					<transform pos="1.5 -0.5 0"/>
+					<emitter>0</emitter>
+					<spawn_rate>42</spawn_rate>
+					<life_time dispersion="0">1.7</life_time>
+					<size dispersion="0.15">0.46</size>
+					<growth dispersion="0">1</growth>
+					<speed mag_dispersion="2.24" dir_dispersion="0.2">6.94</speed>
+					<src_color dispersion="0 0 0">0.4980392 0.4980392 0</src_color>
+					<dst_color dispersion="0 0 0">1 0 0</dst_color>
+					<gravity>-10</gravity>
+				</node>
+				<node type="mesh" name="mesh2" material="0">
+					<transform pos="-0.5 0.5 1"/>
+					<mesh>cat.mesh</mesh>
+				</node>
+				<node type="mesh" name="mesh4" material="0">
+					<transform pos="0.5 0.5 1"/>
+					<mesh>cat.mesh</mesh>
+				</node>
+			</children>
+		</node>
+	</nodes>
+</scene>

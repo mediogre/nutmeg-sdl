@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="..\..\..\Engine\CoreSrc\Common\Array.h" open="1" top="1" tabpos="5">
+		<Cursor position="2241" topLine="123" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Common\Debug.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="1292" topLine="25" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Common\Debug.h" open="0" top="0" tabpos="2">
+		<Cursor position="396" topLine="0" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Common\Factory.h" open="0" top="0" tabpos="6">
+		<Cursor position="1148" topLine="42" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Common\File.h" open="0" top="0" tabpos="0">
+		<Cursor position="963" topLine="17" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Common\Log.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="1196" topLine="22" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Common\Map.h" open="0" top="0" tabpos="0">
+		<Cursor position="2503" topLine="89" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Common\Resource.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="8684" topLine="239" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Common\Resource.h" open="0" top="0" tabpos="5">
+		<Cursor position="10281" topLine="378" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Common\Str.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="3019" topLine="98" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Common\Str.h" open="0" top="0" tabpos="0">
+		<Cursor position="1502" topLine="42" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Common\Xml.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="7442" topLine="259" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Common\Xml.h" open="0" top="0" tabpos="0">
+		<Cursor position="1175" topLine="29" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Engine\Console.cpp" open="0" top="0" tabpos="8">
+		<Cursor position="15703" topLine="554" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Engine\Console.h" open="0" top="0" tabpos="6">
+		<Cursor position="17275" topLine="685" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Engine\Engine.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="2212" topLine="82" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Engine\Subsystem.h" open="0" top="0" tabpos="2">
+		<Cursor position="2450" topLine="62" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Engine\Timer.h" open="0" top="0" tabpos="0">
+		<Cursor position="1264" topLine="32" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Math\MathCore.h" open="0" top="0" tabpos="4">
+		<Cursor position="3752" topLine="124" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Nutmeg.h" open="0" top="0" tabpos="6">
+		<Cursor position="818" topLine="0" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Physics\AbstractPhysics.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1580" topLine="39" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Physics\PhysicsNewton.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="15501" topLine="595" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Physics\PhysicsTokamak.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="8345" topLine="325" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Render\AbstractRender.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1930" topLine="55" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Render\AbstractRender.h" open="0" top="0" tabpos="8">
+		<Cursor position="350" topLine="40" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Render\RenderOpenGL1.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="37673" topLine="1285" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Render\RenderOpenGL2.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="1009" topLine="17" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Render\Skeleton.h" open="0" top="0" tabpos="0">
+		<Cursor position="2747" topLine="108" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Scene\EntityNode.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="923" topLine="13" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Scene\EntityNode.h" open="0" top="0" tabpos="0">
+		<Cursor position="1342" topLine="31" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Scene\Node.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="7150" topLine="284" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Scene\Node.h" open="0" top="0" tabpos="0">
+		<Cursor position="988" topLine="18" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Scene\ParticleNode.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1700" topLine="33" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Scene\PhysicsNode.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="9293" topLine="322" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Scene\Scene.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="3305" topLine="83" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Scene\Scene.h" open="0" top="0" tabpos="11">
+		<Cursor position="0" topLine="100" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Scene\TextNode.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2087" topLine="39" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Scene\TriggerNode.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="4350" topLine="138" />
+	</File>
+	<File name="..\..\..\Engine\CoreSrc\Scene\TriggerNode.h" open="0" top="0" tabpos="0">
+		<Cursor position="1407" topLine="16" />
+	</File>
+	<File name="..\..\..\Engine\Library\OpenGL\OpenGL.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="460" topLine="0" />
+	</File>
+	<File name="..\..\..\Engine\Library\OpenGL\OpenGL.h" open="0" top="0" tabpos="0">
+		<Cursor position="366" topLine="0" />
+	</File>
+	<File name="..\..\..\Engine\Subsystems\Platform\PlatformWindows.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="908" topLine="13" />
+	</File>
+	<File name="..\..\..\Engine\Subsystems\Platform\PlatformWindows.h" open="0" top="0" tabpos="7">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="Settings.h" open="0" top="0" tabpos="0">
+		<Cursor position="624" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="2781" topLine="104" />
+	</File>
+</CodeBlocks_layout_file>

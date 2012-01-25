@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="CBTemplate" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="..\Binary\CBTemplate" prefix_auto="1" extension_auto="1" />
+				<Option object_output="..\Object\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectIncludeDirsRelation="0" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="..\Binary\CBTemplate" prefix_auto="1" extension_auto="1" />
+				<Option object_output="..\Object\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectIncludeDirsRelation="0" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Nutmeg_x86d">
+				<Option output="..\Library\Nutmeg_x86d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="..\Binary\" />
+				<Option object_output="..\Object\Nutmeg_x86d\" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DBUILD_DLL" />
+				</Compiler>
+				<Linker>
+					<Add library="user32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-Wno-parentheses" />
+			<Add directory="..\..\..\Engine\CoreSrc" />
+			<Add directory="..\..\..\Engine\CoreSrc\Common" />
+			<Add directory="..\..\..\Engine\CoreSrc\Audio" />
+			<Add directory="..\..\..\Engine\CoreSrc\Platform" />
+			<Add directory="..\..\..\Engine\CoreSrc\Engine" />
+			<Add directory="..\..\..\Engine\CoreSrc\Game" />
+			<Add directory="..\..\..\Engine\CoreSrc\Math" />
+			<Add directory="..\..\..\Engine\CoreSrc\Physics" />
+			<Add directory="..\..\..\Engine\CoreSrc\Render" />
+			<Add directory="..\..\..\Engine\CoreSrc\Scene" />
+			<Add directory="..\..\..\Engine\CoreSrc\Physics\Tokamak" />
+			<Add directory="..\..\..\Engine\CoreSrc\Physics\Tokamak\math" />
+			<Add directory="..\..\..\Engine\Library\Squall" />
+			<Add directory="..\..\..\Engine\Library\OpenGL" />
+			<Add directory="..\..\..\Engine\Library\Newton" />
+			<Add directory="..\..\..\Engine\Library\DevIL" />
+			<Add directory="..\Source" />
+			<Add directory="..\..\..\Engine\Subsystems\Platform" />
+			<Add directory="..\..\..\Engine\Subsystems\Audio" />
+		</Compiler>
+		<Linker>
+			<Add library="..\..\..\Engine\Library\Newton\vc\newton.lib" />
+			<Add library="..\..\..\Engine\Library\Squall\vc\Squall.lib" />
+			<Add library="..\..\..\Engine\Library\DevIL\cb\ILUT.a" />
+			<Add library="..\..\..\Engine\Library\DevIL\cb\ILU.a" />
+			<Add library="..\..\..\Engine\Library\DevIL\cb\DevIL.a" />
+			<Add library="win32k" />
+			<Add library="gdi32" />
+			<Add library="opengl32" />
+			<Add directory="..\..\..\Engine\Library\DevIL\cb" />
+		</Linker>
+		<Unit filename="..\..\..\Engine\CoreSrc\Audio\AbstractAudio.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Audio\AbstractAudio.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Common\Action.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Common\Array.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Common\Debug.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Common\Debug.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Common\Factory.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Common\File.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Common\File.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Common\Log.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Common\Log.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Common\Map.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Common\Resource.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Common\Resource.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Common\SolidArray.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Common\Str.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Common\Str.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Common\Stream.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Common\Xml.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Common\Xml.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Engine\Application.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Engine\Application.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Engine\Console.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Engine\Console.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Engine\Engine.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Engine\Engine.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Engine\Profiler.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Engine\Profiler.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Engine\Subsystem.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Engine\Subsystem.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Engine\Timer.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Engine\Timer.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Game\Entity.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Game\Entity.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Game\Game.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Game\Game.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Game\Level.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Game\Level.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Math\MathCore.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Math\MathCore.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Nutmeg.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Physics\AbstractPhysics.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Physics\AbstractPhysics.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Physics\PhysicsNewton.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Physics\PhysicsNewton.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Physics\PhysicsTokamak.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="..\..\..\Engine\CoreSrc\Physics\PhysicsTokamak.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Platform\AbstractPlatform.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Platform\AbstractPlatform.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Platform\Input.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Platform\Input.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Render\AbstractRender.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Render\AbstractRender.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Render\Camera.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Render\Camera.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Render\Light.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Render\Light.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Render\Material.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Render\Material.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Render\Mesh.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Render\Mesh.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Render\RenderBadaOpenGL1.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Render\RenderBadaOpenGL1.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Render\RenderOpenGL1.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Render\RenderOpenGL1.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Render\RenderOpenGL2.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Render\RenderOpenGL2.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Render\Skeleton.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Render\Skeleton.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\BoneNode.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\BoneNode.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\CameraNode.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\CameraNode.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\ControllerNode.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\ControllerNode.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\EntityNode.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\EntityNode.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\LightNode.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\LightNode.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\MeshNode.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\MeshNode.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\Node.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\Node.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\OriginNode.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\OriginNode.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\ParticleNode.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\ParticleNode.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\ParticleSystemNode.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\ParticleSystemNode.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\PhysicsNode.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\PhysicsNode.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\Scene.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\Scene.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\SkinnedMeshNode.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\SkinnedMeshNode.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\TextNode.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\TextNode.h" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\TriggerNode.cpp" />
+		<Unit filename="..\..\..\Engine\CoreSrc\Scene\TriggerNode.h" />
+		<Unit filename="..\..\..\Engine\Library\OpenGL\OpenGL.cpp" />
+		<Unit filename="..\..\..\Engine\Library\OpenGL\OpenGL.h" />
+		<Unit filename="..\..\..\Engine\Subsystems\Audio\AudioBada.cpp" />
+		<Unit filename="..\..\..\Engine\Subsystems\Audio\AudioBada.h" />
+		<Unit filename="..\..\..\Engine\Subsystems\Audio\AudioSquall.cpp" />
+		<Unit filename="..\..\..\Engine\Subsystems\Audio\AudioSquall.h" />
+		<Unit filename="..\..\..\Engine\Subsystems\Platform\PlatformBada.cpp" />
+		<Unit filename="..\..\..\Engine\Subsystems\Platform\PlatformBada.h" />
+		<Unit filename="..\..\..\Engine\Subsystems\Platform\PlatformWindows.cpp" />
+		<Unit filename="..\..\..\Engine\Subsystems\Platform\PlatformWindows.h" />
+		<Unit filename="Settings.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
