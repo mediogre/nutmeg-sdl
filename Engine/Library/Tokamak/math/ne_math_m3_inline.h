@@ -11,13 +11,6 @@
  *                                                                       *
  *************************************************************************/
 
-#include "ne_math.h"
-
-#ifdef __BCPLUSPLUS__
-	#define sinf sin
-	#define cosf cos
-#endif
-
 NEINLINE neV3&   neM3::operator   []       ( s32 I )
 {
 	ASSERT(I >= 0);

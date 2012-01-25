@@ -50,12 +50,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\Engine\CoreSrc\Common;..\..\..\Samples\CBTemplate\Source;..\..\..\Engine\CoreSrc\Engine;..\..\..\Engine\CoreSrc\Math;..\..\..\Engine\CoreSrc\Render;..\..\..\Engine\CoreSrc\Audio;..\..\..\Engine\CoreSrc\Scene;..\..\..\Engine\CoreSrc\Physics;..\..\..\Engine\CoreSrc\Physics\Tokamak;..\..\..\Engine\CoreSrc\Physics\Tokamak\math;..\..\..\Engine\Library\Newton;..\..\..\Engine\Library\OpenGL;..\..\..\Engine\Library\DevIL;..\..\..\Engine\CoreSrc\Platform;..\..\..\Engine\CoreSrc;..\..\..\Engine\CoreSrc\Game;..\..\..\Engine\Subsystems\Platform;..\..\..\Engine\Subsystems\Audio;..\..\..\Engine\Library\Squall</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\Engine\CoreSrc\Common;..\..\..\Samples\CBTemplate\Source;..\..\..\Engine\CoreSrc\Engine;..\..\..\Engine\CoreSrc\Math;..\..\..\Engine\CoreSrc\Render;..\..\..\Engine\CoreSrc\Audio;..\..\..\Engine\CoreSrc\Scene;..\..\..\Engine\CoreSrc\Physics;..\..\..\Engine\Library\Tokamak;..\..\..\Engine\Library\Tokamak\math;..\..\..\Engine\Library\Newton;..\..\..\Engine\Library\OpenGL;..\..\..\Engine\Library\DevIL;..\..\..\Engine\CoreSrc\Platform;..\..\..\Engine\CoreSrc;..\..\..\Engine\CoreSrc\Game;..\..\..\Engine\Subsystems\Platform;..\..\..\Engine\Subsystems\Audio;..\..\..\Engine\Library\Squall</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);S:\code\n\nutengine\vs2008\newton.lib;S:\code\n\nutengine\vs2008\DevIL.lib;S:\code\n\nutengine\vs2008\ILUT.lib;S:\code\n\nutengine\vs2008\ILU.lib;S:\code\n\nutengine\vs2008\Squall.lib</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);..\..\..\Engine\Library\Newton\vc\newton.lib;..\..\..\Engine\Library\Tokamak\vc\tokamak.lib;..\..\..\Engine\Library\DevIL\vc\DevIL.lib;..\..\..\Engine\Library\DevIL\vc\ILUT.lib;..\..\..\Engine\Library\DevIL\vc\ILU.lib;..\..\..\Engine\Library\Squall\vc\Squall.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -96,25 +96,6 @@
     <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\AbstractPhysics.cpp" />
     <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\PhysicsNewton.cpp" />
     <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\PhysicsTokamak.cpp" />
-    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\boxcylinder.cpp" />
-    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\collision.cpp" />
-    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\collisionbody.cpp" />
-    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\constraint.cpp" />
-    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\cylinder.cpp" />
-    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\dcd.cpp" />
-    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\lines.cpp" />
-    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\ne_interface.cpp" />
-    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\region.cpp" />
-    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\restcontact.cpp" />
-    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\rigidbody.cpp" />
-    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\rigidbodybase.cpp" />
-    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\scenery.cpp" />
-    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\simulator.cpp" />
-    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\solver.cpp" />
-    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\sphere.cpp" />
-    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\stack.cpp" />
-    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\tricollision.cpp" />
-    <ClCompile Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\useopcode.cpp" />
     <ClCompile Include="..\..\..\Engine\CoreSrc\Platform\AbstractPlatform.cpp" />
     <ClCompile Include="..\..\..\Engine\CoreSrc\Platform\Input.cpp" />
     <ClCompile Include="..\..\..\Engine\CoreSrc\Render\AbstractRender.cpp" />
@@ -176,17 +157,6 @@
     <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\AbstractPhysics.h" />
     <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\PhysicsNewton.h" />
     <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\PhysicsTokamak.h" />
-    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\collision.h" />
-    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\collision2.h" />
-    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\constraint.h" />
-    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\containers.h" />
-    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\dcd.h" />
-    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\message.h" />
-    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\rigidbody.h" />
-    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\scenery.h" />
-    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\simulator.h" />
-    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\stack.h" />
-    <ClInclude Include="..\..\..\Engine\CoreSrc\Physics\Tokamak\tokamak.h" />
     <ClInclude Include="..\..\..\Engine\CoreSrc\Platform\AbstractPlatform.h" />
     <ClInclude Include="..\..\..\Engine\CoreSrc\Platform\Input.h" />
     <ClInclude Include="..\..\..\Engine\CoreSrc\Render\AbstractRender.h" />

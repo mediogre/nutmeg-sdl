@@ -17,11 +17,6 @@
 
 //=========================================================================
 
-#ifdef __BCPLUSPLUS__
-	#define sqrtf sqrt
-    #define acosf acos
-#endif
-
 NEINLINE neQ::neQ( void ) 
 {
 	Identity();

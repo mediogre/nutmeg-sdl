@@ -90,11 +90,7 @@ NEINLINE f32 neV3::Length( void ) const
 	if (neIsConsiderZero(dot))
 		return 0.0f;
 
-	#ifdef __BCPLUSPLUS__
-	    return (f32)sqrt( dot );
-	#else
-	    return (f32)sqrtf( dot );
-	#endif
+    return (f32)sqrtf( dot );
 }
 
 //=========================================================================
@@ -117,13 +113,8 @@ NEINLINE void neV3::Normalize( void )
 
 NEINLINE void neV3::RotateX( neRadian Rx )
 {
-	#ifdef __BCPLUSPLUS__
-    	f32 s = (f32)sin( Rx );
-	    f32 c = (f32)cos( Rx );
-	#else
-	    f32 s = (f32)sinf( Rx );
-	    f32 c = (f32)cosf( Rx );
-	#endif
+    f32 s = (f32)sinf( Rx );
+    f32 c = (f32)cosf( Rx );
     f32 y = v[1];
     f32 z = v[2];
 
@@ -135,13 +126,8 @@ NEINLINE void neV3::RotateX( neRadian Rx )
 
 NEINLINE void neV3::RotateY( neRadian Ry )
 {
-	#ifdef __BCPLUSPLUS__
-    	f32 s = (f32)sin( Ry );
-	    f32 c = (f32)cos( Ry );
-	#else
-	    f32 s = (f32)sinf( Ry );
-    	f32 c = (f32)cosf( Ry );
-	#endif
+    f32 s = (f32)sinf( Ry );
+    f32 c = (f32)cosf( Ry );
     f32 x = X();
     f32 z = Z();
 
@@ -153,13 +139,8 @@ NEINLINE void neV3::RotateY( neRadian Ry )
 
 NEINLINE void neV3::RotateZ( neRadian Rz )
 {
-	#ifdef __BCPLUSPLUS__
-    	f32 s = (f32)sin( Rz );
-	    f32 c = (f32)cos( Rz );
-	#else
-    	f32 s = (f32)sinf( Rz );
-	    f32 c = (f32)cosf( Rz );
-	#endif
+    f32 s = (f32)sinf( Rz );
+    f32 c = (f32)cosf( Rz );
     f32 x = X();
     f32 y = Y();
 

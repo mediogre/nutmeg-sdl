@@ -20,7 +20,7 @@
 #define TOKAMAK_VERSION  (( TOKAMAK_VERSION_MAJOR <<24)+(TOKAMAK_VERSION_MINOR <<16)+(TOKAMAK_VERSION_BUGFIX <<8) + 0)
 #include <malloc.h>
 
-#include "ne_math.h"
+#include "math/ne_math.h"
 
 #ifdef TOKAMAK_USE_DLL
 #ifdef TOKAMAK_DLL_EXPORTS
@@ -550,8 +550,6 @@ public:
 	void	SetVelocity(const neV3 & v);
 	
 	neV3	GetAngularVelocity();
-	
-	void	SetAngularVelocity(const neV3 & v);
 	
 	neV3	GetAngularMomentum();
 	
