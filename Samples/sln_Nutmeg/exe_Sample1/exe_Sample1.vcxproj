@@ -50,12 +50,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\Engine\CoreSrc\Common;..\..\..\Samples\CBTemplate\Source;..\..\..\Engine\CoreSrc\Engine;..\..\..\Engine\CoreSrc\Math;..\..\..\Engine\CoreSrc\Render;..\..\..\Engine\CoreSrc\Audio;..\..\..\Engine\CoreSrc\Scene;..\..\..\Engine\CoreSrc\Physics;..\..\..\Engine\Library\Tokamak;..\..\..\Engine\Library\Tokamak\math;..\..\..\Engine\Library\Newton;..\..\..\Engine\Library\OpenGL;..\..\..\Engine\Library\DevIL;..\..\..\Engine\CoreSrc\Platform;..\..\..\Engine\CoreSrc;..\..\..\Engine\CoreSrc\Game;..\..\..\Engine\Subsystems\Platform;..\..\..\Engine\Subsystems\Audio;..\..\..\Engine\Library\Squall</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\Engine\CoreSrc\Common;..\..\..\Samples\CBTemplate\Source;..\..\..\Engine\CoreSrc\Engine;..\..\..\Engine\CoreSrc\Math;..\..\..\Engine\CoreSrc\Render;..\..\..\Engine\CoreSrc\Audio;..\..\..\Engine\CoreSrc\Scene;..\..\..\Engine\CoreSrc\Physics;..\..\..\Engine\Library\Tokamak;..\..\..\Engine\Library\Tokamak\math;..\..\..\Engine\Library\Newton;..\..\..\Engine\Library\OpenGL;..\..\..\Engine\Library\DevIL;..\..\..\Engine\CoreSrc\Platform;..\..\..\Engine\CoreSrc;..\..\..\Engine\CoreSrc\Game;..\..\..\Engine\Subsystems\Platform;..\..\..\Engine\Subsystems\Audio;..\..\..\Engine\Library\Squall;..\..\..\Engine\Library\SDL</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);..\..\..\Engine\Library\Newton\vc\newton.lib;..\..\..\Engine\Library\Tokamak\vc\tokamak.lib;..\..\..\Engine\Library\DevIL\vc\DevIL.lib;..\..\..\Engine\Library\DevIL\vc\ILUT.lib;..\..\..\Engine\Library\DevIL\vc\ILU.lib;..\..\..\Engine\Library\Squall\vc\Squall.lib</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);..\..\..\Engine\Library\Newton\vc\newton.lib;..\..\..\Engine\Library\Tokamak\vc\tokamak.lib;..\..\..\Engine\Library\DevIL\vc\DevIL.lib;..\..\..\Engine\Library\DevIL\vc\ILUT.lib;..\..\..\Engine\Library\DevIL\vc\ILU.lib;..\..\..\Engine\Library\Squall\vc\Squall.lib;..\..\..\Engine\Library\SDL\vc\SDL.lib;..\..\..\Engine\Library\SDL\vc\SDLmain.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -126,6 +126,7 @@
     <ClCompile Include="..\..\..\Engine\Subsystems\Audio\AudioBada.cpp" />
     <ClCompile Include="..\..\..\Engine\Subsystems\Audio\AudioSquall.cpp" />
     <ClCompile Include="..\..\..\Engine\Subsystems\Platform\PlatformBada.cpp" />
+    <ClCompile Include="..\..\..\Engine\Subsystems\Platform\PlatformSDL.cpp" />
     <ClCompile Include="..\..\..\Engine\Subsystems\Platform\PlatformWindows.cpp" />
     <ClCompile Include="..\..\..\Samples\CBTemplate\Source\main.cpp" />
   </ItemGroup>
@@ -187,6 +188,7 @@
     <ClInclude Include="..\..\..\Engine\Subsystems\Audio\AudioBada.h" />
     <ClInclude Include="..\..\..\Engine\Subsystems\Audio\AudioSquall.h" />
     <ClInclude Include="..\..\..\Engine\Subsystems\Platform\PlatformBada.h" />
+    <ClInclude Include="..\..\..\Engine\Subsystems\Platform\PlatformSDL.h" />
     <ClInclude Include="..\..\..\Engine\Subsystems\Platform\PlatformWindows.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

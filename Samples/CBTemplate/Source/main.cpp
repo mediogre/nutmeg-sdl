@@ -13,6 +13,7 @@
 #include "Nutmeg.h"
 #include "RenderOpenGL1.h"
 #include "PlatformWindows.h"
+#include "PlatformSDL.h"
 #include "AudioSquall.h"
 
 //------------------------------------------------------------------------------
@@ -57,7 +58,7 @@ namespace Nutmeg {
 			font.load("Core/Fonts/ms_sans_serif_8.xml_font");
 			font->bind();
 
-			platform->setVideoMode(VideoMode(1024, 768, 32), false);
+			// platform->setVideoMode(VideoMode(1024, 768, 32), false);
 
 			bump.load("hit1.wav");
 			texture.load("fire.png");
@@ -192,8 +193,12 @@ namespace Nutmeg {
 
 	int engineMain(int argc, const char **argv) {
 
-		if (isPlatformWindowsSupported() == true) {
-			AbstractPlatform::addImplementation("Windows", createPlatformWindows);
+		// if (isPlatformWindowsSupported() == true) {
+			// AbstractPlatform::addImplementation("Windows", createPlatformWindows);
+		// }
+
+		if (isPlatformSDLSupported() == true) {
+			AbstractPlatform::addImplementation("SDL", createPlatformSDL);
 		}
 
 		if (isAudioSquallSupported() == true) {
@@ -202,7 +207,7 @@ namespace Nutmeg {
 
 		Engine engine;
 
-		engine.setSubsystemCoreId("Windows");
+		engine.setSubsystemCoreId("SDL");
 		engine.setSubsystemRenderId("OpenGL1");
 		engine.setSubsystemAudioId("Squall");
 

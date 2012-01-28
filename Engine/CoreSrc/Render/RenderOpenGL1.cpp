@@ -19,7 +19,7 @@
 
 //------------------------------------------------------------------------------
 
-#ifdef NUTMEG_PLATFORM_WINDOWS
+#if defined(NUTMEG_PLATFORM_WINDOWS) || defined(NUTMEG_PLATFORM_SDL)
 
 //------------------------------------------------------------------------------
 
@@ -1704,7 +1704,7 @@ namespace Nutmeg {
 
 	//--------------------------------------------------------------------------
 
-	#ifdef NUTMEG_PLATFORM_WINDOWS
+	#if defined(NUTMEG_PLATFORM_WINDOWS) || defined(NUTMEG_PLATFORM_SDL)
 
 		bool isRenderOpenGL1Supported() {
 			return true;
