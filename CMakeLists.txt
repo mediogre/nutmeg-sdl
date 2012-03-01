@@ -1,6 +1,8 @@
 project (nutmeg CXX C)
 cmake_minimum_required (VERSION 2.6)
 
+link_directories (${nutmeg_SOURCE_DIR}/linux_dep/tokamak_release/lib)
+
 FIND_PACKAGE(OpenGL REQUIRED)
 
 INCLUDE_DIRECTORIES(${OPENGL_INCLUDE_DIR})
@@ -29,6 +31,7 @@ include_directories (
 )
 
 include (FindSDL)
+include (FindDevIL)
 
 set (NUTMEG_SOURCES
   Engine/CoreSrc/Audio/AbstractAudio.cpp
@@ -88,7 +91,7 @@ set (NUTMEG_SOURCES
 set_source_files_properties(${NUTMEG_SOURCES} PROPERTIES LANGUAGE CXX)
 add_executable (nutmeg_test WIN32 ${NUTMEG_SOURCES})
 
-TARGET_LINK_LIBRARIES(nutmeg_test ${OPENGL_gl_LIBRARY})
+TARGET_LINK_LIBRARIES(nutmeg_test ${OPENGL_gl_LIBRARY} tokamak)
 
 if (SDL_FOUND)
   include_directories (${SDL_INCLUDE_DIR})
@@ -97,3 +100,7 @@ if (SDL_FOUND)
     set_target_properties (nutmeg_test PROPERTIES LINK_FLAGS /nodefaultlib:msvcrt)
   ENDIF (MSVC)  
 endif (SDL_FOUND)
+
+if (IL_FOUND)
+  target_link_libraries (nutmeg_test ${IL_LIBRARIES} ${ILU_LIBRARIES} ${ILUT_LIBRARIES})
+endif (IL_FOUND)

@@ -56,7 +56,7 @@ namespace Nutmeg {
 		
 		platform = engine->getCore();
 		render = engine->getRender();
-		audio = engine->getAudio();
+		// audio = engine->getAudio();
 		console = engine->getConsole();
 		profiler = engine->getProfiler();
 		resource_manager = engine->getResourceManager();

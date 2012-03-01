@@ -136,10 +136,10 @@ namespace Nutmeg {
 		// audio
 		//----------------------------------------------------------------------
 
-		audio = AbstractAudio::createImplementation(subsystem_audio_id, this);
+		// audio = AbstractAudio::createImplementation(subsystem_audio_id, this);
 
 		if (audio == NULL) {
-			fatal("Engine::onStartup(): can not create Audio with id \"%s\".\n", subsystem_audio_id.str());
+            //	fatal("Engine::onStartup(): can not create Audio with id \"%s\".\n", subsystem_audio_id.str());
 		}
 
 		//----------------------------------------------------------------------
@@ -162,7 +162,7 @@ namespace Nutmeg {
 		console->initSystemVariables(this);
 		profiler->initSystemVariables(this);
 		//render->initSystemVariables(this);
-		audio->initSystemVariables(this);
+		//audio->initSystemVariables(this);
 		//physics->initSystemVariables(this);
 		resource_manager->initSystemVariables(this);
 		application->initSystemVariables(this);
@@ -176,7 +176,7 @@ namespace Nutmeg {
 		platform->onStartup(argc, argv);
 		profiler->onStartup(argc, argv);
 		//render->onStartup(argc, argv);
-		audio->onStartup(argc, argv);
+		// audio->onStartup(argc, argv);
 		//physics->onStartup(argc, argv);
 		application->onStartup(argc, argv);
 

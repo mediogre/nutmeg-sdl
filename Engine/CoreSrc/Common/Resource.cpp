@@ -144,7 +144,7 @@ namespace Nutmeg {
 		remove_unused = state;
 		texture_man->setRemoveUnused(state);
 		mesh_man->setRemoveUnused(state);
-		sound_man->setRemoveUnused(state);
+		// sound_man->setRemoveUnused(state);
 		font_man->setRemoveUnused(state);
 		skeleton_man->setRemoveUnused(state);
 	}
@@ -225,9 +225,9 @@ namespace Nutmeg {
 		// sound manager
 		//----------------------------------------------------------------------
 
-		Sound *sound = audio->loadSound(Str(getResourcePath()) + "Core/Sounds/Silence.wav");
-		sound_man = new ResourceMan <Sound> (this, sound);
-		SoundRef::setManager(sound_man);
+		// Sound *sound = audio->loadSound(Str(getResourcePath()) + "Core/Sounds/Silence.wav");
+		// sound_man = new ResourceMan <Sound> (this, sound);
+		// SoundRef::setManager(sound_man);
 
 		//----------------------------------------------------------------------
 		// skeleton manager
@@ -249,10 +249,10 @@ namespace Nutmeg {
 		// scene manager
 		//----------------------------------------------------------------------
 
-		Scene *scene = new Scene(engine);
-		scene->init("Newton");
-		scene_man = new ResourceMan <Scene> (this, scene);
-		SceneRef::setManager(scene_man);
+		// Scene *scene = new Scene(engine);
+		// scene->init("Newton");
+		// scene_man = new ResourceMan <Scene> (this, scene);
+		// SceneRef::setManager(scene_man);
 
 		//----------------------------------------------------------------------
 
@@ -273,7 +273,7 @@ namespace Nutmeg {
 			if (time_to_reload <= 0.0f) {
 				texture_man->reload(true);
 				mesh_man->reload(true);
-				sound_man->reload(true);
+				// sound_man->reload(true);
 				font_man->reload(true);
 				skeleton_man->reload(true);
 				//animation_sequence_man->reload(true);
@@ -289,7 +289,7 @@ namespace Nutmeg {
 
 	void ResourceManager::onShutdown() {
 
-		delete scene_man;
+		// delete scene_man;
 		scene_man = NULL;
 		SceneRef::setManager(NULL);
 
@@ -301,9 +301,9 @@ namespace Nutmeg {
 		skeleton_man = NULL;
 		SkeletonRef::setManager(NULL);
 
-		delete sound_man;
-		sound_man = NULL;
-		SoundRef::setManager(NULL);
+        //		delete sound_man;
+        //		sound_man = NULL;
+        //		SoundRef::setManager(NULL);
 
 		delete font_man;
 		font_man = NULL;

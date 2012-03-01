@@ -60,15 +60,16 @@ namespace Nutmeg {
 
 			// platform->setVideoMode(VideoMode(1024, 768, 32), false);
 
-			bump.load("hit1.wav");
+			// bump.load("hit1.wav");
 			texture.load("fire.png");
 			checker.load("Core/Editor/aplha2.jpg");
 
 			// scene
-			scene = new Scene(engine);
-			scene->init("Newton");
-			scene->load("compound.xml_scene");
-			scene->getPhysicsWorld().setCollisionCallback(collide, this);
+			// scene = new Scene(engine);
+			// scene->init("Newton");
+            // scene->init ("Tokamak"); 
+			//scene->load("compound.xml_scene");
+			//scene->getPhysicsWorld().setCollisionCallback(collide, this);
 
 			camera.pos = vec3(0.5f, 0.5f, 0.5f);
 			camera.distance = 10.0f;
@@ -82,13 +83,13 @@ namespace Nutmeg {
 		}
 
 		void onShutdown() {
-			delete scene;
+			// delete scene;
 			scene = NULL;
 		}
 
 		void playSound(float volume) {
-			bump->setVolume(volume);
-			bump->play();
+			// bump->setVolume(volume);
+			// bump->play();
 		}
 
 		void onUpdate(float dt) {
@@ -126,8 +127,8 @@ namespace Nutmeg {
 
 			platform->setTitle(format("fps: %.2f", platform->getFPS()));
 
-			scene->updatePhysics(dt);
-			scene->update(dt);
+			// scene->updatePhysics(dt);
+			// scene->update(dt);
 
 		}
 
@@ -138,14 +139,13 @@ namespace Nutmeg {
 			render->setColor(vec3(1.0f, 1.0f, 1.0f), 1.0f);
 			render->clear(true, true);
 
-			/*
+		
 			render->begin2d(-1, -1);
 			render->drawImageRepeated(0, 0, render->getWidth(), render->getHeight(), checker);
 			render->end2d();
-            */
 
 			camera.setView(render);
-			scene->render(camera, render);
+			// scene->render(camera, render);
 
 
 			font->bind();
@@ -160,7 +160,7 @@ namespace Nutmeg {
 
 		void onKeyDown(int key) {
 			if (key == KEY_ENTER) {
-            	scene->restore();
+            	// scene->restore();
 			}
 		}
 
@@ -201,15 +201,15 @@ namespace Nutmeg {
 			AbstractPlatform::addImplementation("SDL", createPlatformSDL);
 		}
 
-		if (isAudioSquallSupported() == true) {
-			AbstractAudio::addImplementation("Squall", createAudioSquall);
-		}
+        //		if (isAudioSquallSupported() == true) {
+		//	AbstractAudio::addImplementation("Squall", createAudioSquall);
+		// }
 
 		Engine engine;
 
 		engine.setSubsystemCoreId("SDL");
 		engine.setSubsystemRenderId("OpenGL1");
-		engine.setSubsystemAudioId("Squall");
+		// engine.setSubsystemAudioId("Squall");
 
 		MyApp *application = new MyApp();
 
