@@ -18,7 +18,7 @@
 
 #include "Stream.h"
 #include "Array.h"
-#include "Assert.h"
+#include <assert.h>
 
 //------------------------------------------------------------------------------
 //

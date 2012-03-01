@@ -16,7 +16,7 @@
 //------------------------------------------------------------------------------
 
 #include <stdio.h>
-#include "Assert.h"
+#include <assert.h>
 #include "Log.h"
 #include "Scene.h"
 

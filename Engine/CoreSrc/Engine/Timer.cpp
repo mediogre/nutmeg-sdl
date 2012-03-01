@@ -21,8 +21,14 @@
 
 #ifdef NUTMEG_PLATFORM_BADA
 	#include <FSysSystemTime.h>
-#else
+#endif
+
+#ifdef NUTMEG_PLATFORM_WINDOWS
 	#include <windows.h>
+#endif
+
+#ifdef NUTMEG_PLATFORM_SDL
+  #include "SDL.h"
 #endif
 
 //------------------------------------------------------------------------------
@@ -44,14 +50,16 @@ namespace Nutmeg {
 	//--------------------------------------------------------------------------
 
 	Timer::Timer() {
-		#ifdef NUTMEG_PLATFORM_BADA
-			start();
-		#else
-			LARGE_INTEGER frq;
-			QueryPerformanceFrequency(&frq);
-			frmFrq = frq.QuadPart;
-			start();
-		#endif
+#ifdef NUTMEG_PLATFORM_BADA
+        start();
+#endif 
+
+#ifdef NUTMEG_PLATFORM_WINDOWS
+        LARGE_INTEGER frq;
+        QueryPerformanceFrequency(&frq);
+        frmFrq = frq.QuadPart;
+        start();
+#endif
 	}
 
 	//--------------------------------------------------------------------------
@@ -61,28 +69,31 @@ namespace Nutmeg {
 	//--------------------------------------------------------------------------
 
 	void Timer::start() {
-		#ifdef NUTMEG_PLATFORM_BADA
-			Osp::System::SystemTime::GetTicks(time);
-		#else
-			LARGE_INTEGER start;
-			QueryPerformanceCounter(&start);
-			time = start.QuadPart;
-		#endif
+#ifdef NUTMEG_PLATFORM_BADA
+        Osp::System::SystemTime::GetTicks(time);
+#endif            
 
+#ifdef NUTMEG_PLATFORM_WINDOWS
+        LARGE_INTEGER start;
+        QueryPerformanceCounter(&start);
+        time = start.QuadPart;
+#endif
 	}
 
 	//--------------------------------------------------------------------------
 
 	double Timer::elapsed() {
-		#ifdef NUTMEG_PLATFORM_BADA
-			long long end;
-			Osp::System::SystemTime::GetTicks(end);
-			return double(end - time) / 1000.0f;
-		#else
-			LARGE_INTEGER end;
-			QueryPerformanceCounter(&end);
-			return (double)(end.QuadPart - time) / (double)frmFrq;
-		#endif
+#ifdef NUTMEG_PLATFORM_BADA
+        long long end;
+        Osp::System::SystemTime::GetTicks(end);
+        return double(end - time) / 1000.0f;
+#endif  
+
+#ifdef NUTMEG_PLATFORM_WINDOWS
+        LARGE_INTEGER end;
+        QueryPerformanceCounter(&end);
+        return (double)(end.QuadPart - time) / (double)frmFrq;
+#endif
 	}
 
 	//--------------------------------------------------------------------------

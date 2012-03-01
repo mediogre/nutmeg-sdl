@@ -15,7 +15,7 @@
 
 //------------------------------------------------------------------------------
 
-#include "Assert.h"
+#include <assert.h>
 #include "Str.h"
 #include "Engine.h"
 #include "Log.h"

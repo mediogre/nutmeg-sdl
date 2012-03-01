@@ -15,7 +15,7 @@
 
 //------------------------------------------------------------------------------
 
-#define NUTMEG_PLATFORM_WINDOWS
+// #define NUTMEG_PLATFORM_WINDOWS
 #define NUTMEG_PLATFORM_SDL
 // #define NUTMEG_COMPILER_GPP
 #define NUTMEG_DEBUG
