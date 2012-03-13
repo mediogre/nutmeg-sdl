@@ -15,7 +15,6 @@ INCLUDE_DIRECTORIES(${OPENGL_INCLUDE_DIR})
 
 include_directories (
   Engine/CoreSrc/Common
-  Samples/CBTemplate/Source
   Engine/CoreSrc/Engine
   Engine/CoreSrc/Math
   Engine/CoreSrc/Render
@@ -34,6 +33,7 @@ include_directories (
   Engine/Subsystems/Audio
   Engine/Library/Squall
   Engine/Library/SDL
+  Samples/example
 )
 
 include (FindSDL)
@@ -103,7 +103,7 @@ set (NUTMEG_SOURCES
   Engine/Subsystems/Platform/PlatformBada.cpp
   Engine/Subsystems/Platform/PlatformSDL.cpp
   Engine/Subsystems/Platform/PlatformWindows.cpp
-  Samples/CBTemplate/Source/main.cpp)
+  Samples/example/main.cpp)
 
 set_source_files_properties(${NUTMEG_SOURCES} PROPERTIES LANGUAGE CXX)
 add_executable (nutmeg_test WIN32 ${NUTMEG_SOURCES})
