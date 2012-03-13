@@ -62,14 +62,14 @@ namespace Nutmeg {
 
 			// bump.load("hit1.wav");
 			texture.load("fire.png");
-			checker.load("Core/Editor/aplha2.jpg");
+			checker.load("Core/Editor/alpha2.jpg");
 
 			// scene
-			// scene = new Scene(engine);
-			// scene->init("Newton");
-            // scene->init ("Tokamak"); 
-			//scene->load("compound.xml_scene");
-			//scene->getPhysicsWorld().setCollisionCallback(collide, this);
+			scene = new Scene(engine);
+			scene->init("Newton");
+			// scene->init ("Tokamak"); 
+			scene->load("compound.xml_scene");
+			scene->getPhysicsWorld().setCollisionCallback(collide, this);
 
 			camera.pos = vec3(0.5f, 0.5f, 0.5f);
 			camera.distance = 10.0f;
@@ -127,8 +127,8 @@ namespace Nutmeg {
 
 			platform->setTitle(format("fps: %.2f", platform->getFPS()));
 
-			// scene->updatePhysics(dt);
-			// scene->update(dt);
+			scene->updatePhysics(dt);
+			scene->update(dt);
 
 		}
 
@@ -145,15 +145,13 @@ namespace Nutmeg {
 			render->end2d();
 
 			camera.setView(render);
-			// scene->render(camera, render);
+			scene->render(camera, render);
 
 
 			font->bind();
 			render->begin2d(-1, -1);
 			render->drawText2d(10, 10, "this is Nutmeg::Core template application");
 			render->end2d();
-
-
 
 			render->end();
 		}

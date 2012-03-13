@@ -78,6 +78,10 @@ namespace Nutmeg {
         QueryPerformanceCounter(&start);
         time = start.QuadPart;
 #endif
+
+#ifdef NUTMEG_PLATFORM_SDL
+	time = SDL_GetTicks();
+#endif
 	}
 
 	//--------------------------------------------------------------------------
@@ -93,6 +97,11 @@ namespace Nutmeg {
         LARGE_INTEGER end;
         QueryPerformanceCounter(&end);
         return (double)(end.QuadPart - time) / (double)frmFrq;
+#endif
+
+#ifdef NUTMEG_PLATFORM_SDL
+	Uint32 now = SDL_GetTicks();
+	return (static_cast<double>(now) - time) / 1000.0;
 #endif
 	}
 

@@ -249,10 +249,10 @@ namespace Nutmeg {
 		// scene manager
 		//----------------------------------------------------------------------
 
-		// Scene *scene = new Scene(engine);
-		// scene->init("Newton");
-		// scene_man = new ResourceMan <Scene> (this, scene);
-		// SceneRef::setManager(scene_man);
+		Scene *scene = new Scene(engine);
+		scene->init("Newton");
+		scene_man = new ResourceMan <Scene> (this, scene);
+		SceneRef::setManager(scene_man);
 
 		//----------------------------------------------------------------------
 
@@ -277,7 +277,7 @@ namespace Nutmeg {
 				font_man->reload(true);
 				skeleton_man->reload(true);
 				//animation_sequence_man->reload(true);
-				//scene_man->reload(true);
+				scene_man->reload(true);
 				time_to_reload = reload_period;
 			}
 
@@ -289,7 +289,7 @@ namespace Nutmeg {
 
 	void ResourceManager::onShutdown() {
 
-		// delete scene_man;
+		delete scene_man;
 		scene_man = NULL;
 		SceneRef::setManager(NULL);
 

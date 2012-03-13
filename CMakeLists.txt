@@ -1,7 +1,13 @@
 project (nutmeg CXX C)
 cmake_minimum_required (VERSION 2.6)
 
-link_directories (${nutmeg_SOURCE_DIR}/linux_dep/tokamak_release/lib)
+if (MSVC)
+  add_definitions(-D_CRT_SECURE_NO_WARNINGS)
+  link_directories (${nutmeg_SOURCE_DIR}/Engine/Library/Tokamak/vc)
+  link_directories (${nutmeg_SOURCE_DIR}/Engine/Library/Newton/vc)
+else()
+  link_directories (${nutmeg_SOURCE_DIR}/linux_dep/tokamak_release/lib)
+endif()
 
 FIND_PACKAGE(OpenGL REQUIRED)
 
@@ -31,7 +37,18 @@ include_directories (
 )
 
 include (FindSDL)
+
 include (FindDevIL)
+
+if (NOT IL_FOUND)
+  if (MSVC)
+    set (IL_LIBRARIES  ${nutmeg_SOURCE_DIR}/Engine/Library/DevIL/vc/DevIL.lib)
+    set (ILU_LIBRARIES ${nutmeg_SOURCE_DIR}/Engine/Library/DevIL/vc/ILU.lib)
+    set (ILUT_LIBRARIES ${nutmeg_SOURCE_DIR}/Engine/Library/DevIL/vc/ILUT.lib)
+    set (IL_FOUND TRUE)
+    message("Using vendored MSVC DevIL")
+  endif()
+endif ()
 
 set (NUTMEG_SOURCES
   Engine/CoreSrc/Audio/AbstractAudio.cpp
@@ -91,7 +108,13 @@ set (NUTMEG_SOURCES
 set_source_files_properties(${NUTMEG_SOURCES} PROPERTIES LANGUAGE CXX)
 add_executable (nutmeg_test WIN32 ${NUTMEG_SOURCES})
 
-TARGET_LINK_LIBRARIES(nutmeg_test ${OPENGL_gl_LIBRARY} tokamak)
+TARGET_LINK_LIBRARIES(nutmeg_test ${OPENGL_gl_LIBRARY} tokamak newton)
+
+if (NOT SDL_FOUND)
+  set (SDL_INCLUDE_DIR ${nutmeg_SOURCE_DIR}/Engine/Library/SDL)
+  set (SDL_LIBRARY ${nutmeg_SOURCE_DIR}/Engine/Library/SDL/vc/SDL.lib ${nutmeg_SOURCE_DIR}/Engine/Library/SDL/vc/SDLmain.lib)
+  set (SDL_FOUND TRUE)
+endif()
 
 if (SDL_FOUND)
   include_directories (${SDL_INCLUDE_DIR})
