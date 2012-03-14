@@ -1,0 +1,59 @@
+<scene version="0" relative_paths="1">
+	<info>
+		<caption>Scene</caption>
+		<description>Nutmeg::Core Engine Scene</description>
+		<copyright>Nutmeg::Core Engine. Copyright (c) One More Studio, 2008-2011</copyright>
+	</info>
+	<user_data/>
+	<environment>
+		<ambient>0.3 0.3 0.3</ambient>
+	</environment>
+	<materials>
+		<material name="material0">
+			<diffuse color="0.9999708 0.9999708 0.9999708" transparency="0">game/a_pic.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+		<material name="material1">
+			<diffuse color="0.9999708 0.9999708 0.9999708">fire.png</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">fire.png</specular>
+			<normal>fire.png</normal>
+			<shininess>10</shininess>
+			<alpha_test>1</alpha_test>
+		</material>
+	</materials>
+	<nodes>
+		<node type="origin" name="scene_origin">
+			<children>
+				<node type="mesh" name="plane" material="0">
+					<transform pos="0.5 11 0" rot="-0.7071068 0 0 -0.7071068" scale="34 23 1"/>
+					<mesh>Core/Primitives/pPlane.mesh</mesh>
+				</node>
+				<node type="particle_system" name="particle_system">
+					<transform pos="7.5 10.5 7.5" rot="0 0.08715574 0 -0.9961947" scale="6 1 1"/>
+					<emitter>1</emitter>
+					<spawn_rate>38</spawn_rate>
+					<life_time dispersion="0">6</life_time>
+					<size dispersion="0">0.1</size>
+					<growth dispersion="0">1</growth>
+					<speed mag_dispersion="0" dir_dispersion="0.66">0.1</speed>
+					<src_color dispersion="0 0 1">0 0 1</src_color>
+					<dst_color dispersion="0 0 0.627451">0 0 0.627451</dst_color>
+					<gravity>-0.8</gravity>
+				</node>
+				<node type="camera" name="camera">
+					<transform pos="0.5 -15 2.5" rot="0.6755902 -0 0 0.7372774"/>
+					<min_z>0.05</min_z>
+					<max_z>70</max_z>
+					<min_angle>-180 0 0</min_angle>
+					<max_angle>0 0 0</max_angle>
+					<min_distance>5</min_distance>
+					<max_distance>6</max_distance>
+					<yaw_fixed>1</yaw_fixed>
+					<pitch_fixed>1</pitch_fixed>
+				</node>
+			</children>
+		</node>
+	</nodes>
+</scene>

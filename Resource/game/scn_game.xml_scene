@@ -1,0 +1,64 @@
+<scene version="0" relative_paths="1">
+	<info>
+		<caption>Scene</caption>
+		<description>Nutmeg::Core Engine Scene</description>
+		<copyright>Nutmeg::Core Engine. Copyright (c) One More Studio, 2008-2011</copyright>
+	</info>
+	<user_data/>
+	<environment>
+		<ambient>0.3 0.3 0.3</ambient>
+	</environment>
+	<materials>
+		<material name="material0">
+			<diffuse color="1.414172 0.707086 0.707086">core/textures/white.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+		<material name="off">
+			<diffuse color="0.9999708 0.9999708 0.9999708">game/tex_off.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+	</materials>
+	<nodes>
+		<node type="origin" name="scene_origin">
+			<children>
+				<node type="trigger" name="trig_stakan">
+					<transform scale="10 1 20"/>
+					<group>0</group>
+					<children>
+						<node type="mesh" name="mesh" material="0">
+							<transform pos="-0.55 0 0" scale="0.1 1 0.9999999"/>
+							<mesh>Core/Primitives/pBox.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh2" material="0">
+							<transform pos="0.55 0 0" scale="0.1 1 0.9999999"/>
+							<mesh>Core/Primitives/pBox.mesh</mesh>
+						</node>
+						<node type="mesh" name="mesh3" material="0">
+							<transform pos="0 0 -0.525" scale="1.2 1 0.05"/>
+							<mesh>Core/Primitives/pBox.mesh</mesh>
+						</node>
+					</children>
+				</node>
+				<node type="camera" name="camera">
+					<transform pos="-4.640046e-18 -36.46909 0" rot="0.7071068 -0 0 0.7071068"/>
+					<min_z>0.05</min_z>
+					<max_z>70</max_z>
+					<min_angle>-180 0 0</min_angle>
+					<max_angle>0 0 0</max_angle>
+					<min_distance>5</min_distance>
+					<max_distance>6</max_distance>
+					<yaw_fixed>1</yaw_fixed>
+					<pitch_fixed>1</pitch_fixed>
+				</node>
+				<node type="mesh" name="but_exit" material="1">
+					<transform pos="8 0 9.5"/>
+					<mesh>Core/Primitives/pBox.mesh</mesh>
+				</node>
+			</children>
+		</node>
+	</nodes>
+</scene>

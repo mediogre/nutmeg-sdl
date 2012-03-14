@@ -1,0 +1,60 @@
+<scene version="0" relative_paths="1">
+	<info>
+		<caption>Scene</caption>
+		<description>Nutmeg::Core Engine Scene</description>
+		<copyright>Nutmeg::Core Engine. Copyright (c) One More Studio, 2008-2011</copyright>
+	</info>
+	<user_data/>
+	<environment>
+		<ambient>0.3 0.3 0.3</ambient>
+	</environment>
+	<materials>
+		<material name="red">
+			<diffuse color="1.732 0 0">game/tex_but_exit.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+		<material name="green">
+			<diffuse color="0 1.732 0">game/tex_but_start.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+		<material name="yellow">
+			<diffuse color="3.0943 3.0943 0">game/tex_but_author.jpg</diffuse>
+			<specular color="0.9999708 0.9999708 0.9999708">core/textures/white.jpg</specular>
+			<normal>core/textures/empty_norm.png</normal>
+			<shininess>10</shininess>
+		</material>
+	</materials>
+	<nodes>
+		<node type="origin" name="scene_origin">
+			<children>
+				<node type="camera" name="camera">
+					<transform pos="0 -4.5 -0.4626236" rot="0.7071068 -0 0 0.7071068"/>
+					<min_z>0.05</min_z>
+					<max_z>70</max_z>
+					<min_angle>-180 0 0</min_angle>
+					<max_angle>0 0 0</max_angle>
+					<min_distance>5</min_distance>
+					<max_distance>6</max_distance>
+					<yaw_fixed>1</yaw_fixed>
+					<pitch_fixed>1</pitch_fixed>
+				</node>
+				<node type="mesh" name="but_exit" material="0">
+					<transform pos="2.5 2.5 -0.5"/>
+					<mesh>Core/Primitives/pBox.mesh</mesh>
+				</node>
+				<node type="mesh" name="but_about" material="2">
+					<transform pos="0 2.5 -0.5"/>
+					<mesh>Core/Primitives/pBox.mesh</mesh>
+				</node>
+				<node type="mesh" name="but_start" material="1">
+					<transform pos="-2.5 2.5 -0.5"/>
+					<mesh>Core/Primitives/pBox.mesh</mesh>
+				</node>
+			</children>
+		</node>
+	</nodes>
+</scene>

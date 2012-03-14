@@ -59,6 +59,8 @@ namespace Nutmeg {
 
 		virtual int main(Application *application, int argc, const char **argv);
 
+		virtual void onStartup(int argc, const char **argv);
+
 		//----------------------------------------------------------------------
 		// perfomance control/info
 		//----------------------------------------------------------------------
@@ -93,6 +95,8 @@ namespace Nutmeg {
 
 		virtual void setOritationMode(VideoOrientationType omt); 
 		virtual VideoOrientationType getOritationMode() const; 
+
+		virtual void onRender();
 
 		//----------------------------------------------------------------------
 		// input
@@ -183,89 +187,89 @@ namespace Nutmeg {
 	}
 
     const char *PlatformSDL::getClipboard() const {
-        // TODO: implement later
-		return NULL;
-	}
+	// TODO: implement later
+	return NULL;
+    }
 
-	void PlatformSDL::setClipboard(const char *str) const {
-        // TODO: implement later
-	}
+    void PlatformSDL::setClipboard(const char *str) const {
+	// TODO: implement later
+    }
 
     const char *PlatformSDL::getCursor() const {
-		return cursor.getName();
-	}
+	return cursor.getName();
+    }
 
-	int PlatformSDL::getMouseX() const {
-	    int x = 0; 
-	    ::SDL_GetMouseState (&x, NULL); 
-	    return x;
-	}
+    int PlatformSDL::getMouseX() const {
+	int x = 0; 
+	::SDL_GetMouseState (&x, NULL); 
+	return x;
+    }
 
-	int PlatformSDL::getMouseY() const {
-	    int y = 0; 
-	    ::SDL_GetMouseState (NULL, &y); 
-	    return y; 
-	}
+    int PlatformSDL::getMouseY() const {
+	int y = 0; 
+	::SDL_GetMouseState (NULL, &y); 
+	return y; 
+    }
 
-	void PlatformSDL::setCursor(const char *file_name) {
-		cursor.load(file_name);
-	}
+    void PlatformSDL::setCursor(const char *file_name) {
+	cursor.load(file_name);
+    }
 
-	int PlatformSDL::getMouseDeltaX() const {
-	    // TODO: implement later
-		return 0;
-	}
+    int PlatformSDL::getMouseDeltaX() const {
+	// TODO: implement later
+	return 0;
+    }
 
-	int PlatformSDL::getMouseDeltaY() const {
-        // TODO: implement later
-		return 0;
-	}
+    int PlatformSDL::getMouseDeltaY() const {
+	// TODO: implement later
+	return 0;
+    }
 
-	int PlatformSDL::getMouseDeltaZ() const {
-        // TODO: implement later
-		return 0;
-	}
+    int PlatformSDL::getMouseDeltaZ() const {
+	// TODO: implement later
+	return 0;
+    }
 
-	bool PlatformSDL::isMouseClip() const {
-        // TODO: implement later
-		return false;
-	}
+    bool PlatformSDL::isMouseClip() const {
+	// TODO: implement later
+	return false;
+    }
 
-	void PlatformSDL::setMouseGrab(bool state) {
-        // TODO: implement later
-	}
+    void PlatformSDL::setMouseGrab(bool state) {
+	// TODO: implement later
+    }
 
-	bool PlatformSDL::isMouseGrab() const {
-        // TODO: implement later
-		return false;
-	}
+    bool PlatformSDL::isMouseGrab() const {
+	// TODO: implement later
+	return false;
+    }
 
-	bool PlatformSDL::isShowCursor() const {
-        // TODO: implement later
-		return true;
-	}
+    bool PlatformSDL::isShowCursor() const {
+	// TODO: implement later
+	return true;
+    }
 
-	void PlatformSDL::setShowCursor(bool state) {
-        // TODO: implement later
-	}
+    void PlatformSDL::setShowCursor(bool state) {
+	// TODO: implement later
+    }
 
-	bool PlatformSDL::isSystemCursor() const {
-        // TODO: implement later
-		return true;
-	}
+    bool PlatformSDL::isSystemCursor() const {
+	// TODO: implement later
+	return true;
+    }
 
-	void PlatformSDL::setSystemCursor(bool state) {
-        // TODO: implement later
-	}
+    void PlatformSDL::setSystemCursor(bool state) {
+	// TODO: implement later
+    }
 
-	void PlatformSDL::setMouseClip(bool state) {
-        // TODO: implement later
-	}
+    void PlatformSDL::setMouseClip(bool state) {
+	// TODO: implement later
+    }
     
-	bool PlatformSDL::buttonHold(int button) const {
-	    if (button < 0 || button >= BUTTON_COUNT) return false;
+    bool PlatformSDL::buttonHold(int button) const {
+	if (button < 0 || button >= BUTTON_COUNT) return false;
         
-        Uint8 buttons = ::SDL_GetMouseState (0, 0);
+	Uint8 buttons = ::SDL_GetMouseState (0, 0);
         int sdl_button = 0; 
         switch (button) {
         case BUTTON_LEFT:
@@ -277,72 +281,72 @@ namespace Nutmeg {
         case BUTTON_MIDDLE:
             sdl_button = 2;
             break;
-        }
+	}
 
 	return (buttons & SDL_BUTTON (sdl_button)) != 0;
-	}
+    }
     
-	int PlatformSDL::main(Application *application_, int argc, const char **argv) {
-		try {
+    int PlatformSDL::main(Application *application_, int argc, const char **argv) {
+	try {
 
-			application = application_;
-			assert(application != NULL);
+	    application = application_;
+	    assert(application != NULL);
 
-			init();
+	    init();
 
-			started = true;
-			application->onStartup(argc, argv);
-			application->onResize(getWidth(), getHeight());
+	    started = true;
+	    application->onStartup(argc, argv);
+	    application->onResize(getWidth(), getHeight());
 
-			float restDt = 0.0f;
+	    float restDt = 0.0f;
 
-			application->onUpdate(0.0f);
-			while (true) {
-				if (!loop()) break;
-				fps.start();
+	    application->onUpdate(0.0f);
+	    while (true) {
+		if (!loop()) break;
+		fps.start();
 
-				updateTimer.start();
-				if (isActive()) {
-					if (updateFPS <= 1.0f) {
-						input();
-						application->onUpdate(fps.dt);
-					} else {
-						float updateTime = fps.dt + restDt;
-						while (updateTime >= 1.0f / updateFPS) {
-							updateTime = updateTime - 1.0f / updateFPS;
-							input();
-							application->onUpdate(1.0f / updateFPS);
-							if (updateFPS <= 1.0f) break;
-						}
-						restDt = updateTime;
-					}
-				}
-				updateTimer.finish();
-
-				renderTimer.start();
-				application->onRender();
-				swap();
-				renderTimer.finish();
-
-				fps.finish();
+		updateTimer.start();
+		if (isActive()) {
+		    if (updateFPS <= 1.0f) {
+			input();
+			application->onUpdate(fps.dt);
+		    } else {
+			float updateTime = fps.dt + restDt;
+			while (updateTime >= 1.0f / updateFPS) {
+			    updateTime = updateTime - 1.0f / updateFPS;
+			    input();
+			    application->onUpdate(1.0f / updateFPS);
+			    if (updateFPS <= 1.0f) break;
 			}
-			Log::message("* DONE ------------------------------------------------\n");
-		} catch (const char *str) {
-			// EVENT(onError(str));
-			done();
-			message(str, "Error");
-			return 1;
-		} catch (...) {
-			// EVENT(onError("unknown"));
-			done();
-			message("Unknown", "Error");
-			return 1;
+			restDt = updateTime;
+		    }
 		}
+		updateTimer.finish();
 
-		done();
+		renderTimer.start();
+		application->onRender();
+		swap();
+		renderTimer.finish();
 
-		return 0;
+		fps.finish();
+	    }
+	    Log::message("* DONE ------------------------------------------------\n");
+	} catch (const char *str) {
+	    // EVENT(onError(str));
+	    done();
+	    message(str, "Error");
+	    return 1;
+	} catch (...) {
+	    // EVENT(onError("unknown"));
+	    done();
+	    message("Unknown", "Error");
+	    return 1;
 	}
+
+	done();
+
+	return 0;
+    }
 
     float PlatformSDL::getFPS() const {
         return fps.afps;
@@ -352,16 +356,16 @@ namespace Nutmeg {
     }
 
     float PlatformSDL::getRenderTime() const {
-		return renderTimer.adt * 1000.0f;
-	}
+	return renderTimer.adt * 1000.0f;
+    }
 
-	float PlatformSDL::getUpdateTime() const {
-		return updateTimer.adt * 1000.0f;
-	}
+    float PlatformSDL::getUpdateTime() const {
+	return updateTimer.adt * 1000.0f;
+    }
 
-	float PlatformSDL::getFrameTime() const {
-		return fps.adt * 1000.0f;
-	}
+    float PlatformSDL::getFrameTime() const {
+	return fps.adt * 1000.0f;
+    }
 
     float PlatformSDL::getUpdateFPS() {
         return updateFPS;
@@ -380,23 +384,23 @@ namespace Nutmeg {
     }
 
     void PlatformSDL::done() {
-		if (!initialized)
-            return;
+	if (!initialized)
+	    return;
         
-		application->onShutdown();
-        SDL_Quit (); 
-		initialized = false;
-	}
+	application->onShutdown();
+	SDL_Quit (); 
+	initialized = false;
+    }
 
     void PlatformSDL::init() {
-		done();
+	done();
 
         // TODO: check for errors
         SDL_Init (SDL_INIT_VIDEO | SDL_INIT_AUDIO | SDL_INIT_TIMER); 
 
-		setVideoMode(vm_, false);
-		initialized = true;
-	}
+	setVideoMode(vm_, false);
+	initialized = true;
+    }
 
     bool PlatformSDL::setVideoMode(const VideoMode &vm, bool full) {
         vm_          = vm;
@@ -425,8 +429,8 @@ namespace Nutmeg {
         SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES,  2);
         
         screen_ = SDL_SetVideoMode (vm.width, vm.height, vm.bits, flags);
-		return true;
-	}
+	return true;
+    }
 
     int PlatformSDL::getVideoModesCount() const {
         return 1;
@@ -479,16 +483,16 @@ namespace Nutmeg {
 
     // hmm - caller should know not to free/delete our str  
     const char *PlatformSDL::getTitle() const {
-		static char str[0x100];
+	static char str[0x100];
         ::SDL_WM_GetCaption ((char **) (&str), 0); 
-		return str;
-	}
+	return str;
+    }
 
     void PlatformSDL::halt() {
         SDL_Event event;
         event.type = SDL_QUIT;
         SDL_PushEvent(&event);
-	}
+    }
 
     bool PlatformSDL::loop() {
         SDL_Event event; 
@@ -496,6 +500,10 @@ namespace Nutmeg {
         bool result = true; 
         while (::SDL_PollEvent (&event)) {
 	    switch (event.type) {
+		case SDL_MOUSEBUTTONDOWN:
+		    if (application && initialized)
+			application->onMouseDown(event.button.x, event.button.y, event.button.button);
+		    break;
 		case SDL_KEYDOWN:
 		    if (application && initialized)
 			application->onKeyDown(event.key.keysym.scancode);
@@ -516,6 +524,27 @@ namespace Nutmeg {
 
     void PlatformSDL::swap() {
         SDL_GL_SwapBuffers (); 
+    }
+
+    void PlatformSDL::onRender() {
+//	if (cursor_visible == true && system_cursor == false) {
+	    int mx = getMouseX();
+	    int my = getMouseY();
+
+	    float cursor_x = mx - float(cursor->getWidth()) / 2.0f;
+	    float cursor_y = my - float(cursor->getHeight()) / 2.0f;
+
+	    render->drawImage(cursor_x, cursor_y, cursor);
+//	}
+    }
+
+    void PlatformSDL::onStartup(int argc, const char **argv) {
+//	console->addMember("halt", &PlatformWindows::halt, this);
+//	console->addMember("video", &PlatformWindows::commandVideo, this);
+//	console->addMember("title", &PlatformWindows::setTitle, this);
+	
+	setCursor("Core/Textures/cursor.png");
+//	updateCursor();
     }
 }
 
