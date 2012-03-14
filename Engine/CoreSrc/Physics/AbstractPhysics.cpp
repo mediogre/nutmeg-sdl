@@ -20,7 +20,7 @@
 //------------------------------------------------------------------------------
 
 #include "PhysicsNewton.h"
-#include "PhysicsTokamak.h"
+// #include "PhysicsTokamak.h"
 
 //------------------------------------------------------------------------------
 //
@@ -44,10 +44,12 @@ namespace Nutmeg {
 		}
 
 
+/*
 		// Tokamak
 		if (isTokamakPhysicsSupported() == true) {
 			physicsFactory.addType("Tokamak", createTokamakPhysics);
 		}
+*/
 	}
 
 	//--------------------------------------------------------------------------

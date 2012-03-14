@@ -1,12 +1,12 @@
 project (nutmeg CXX C)
-cmake_minimum_required (VERSION 2.6)
+cmake_minimum_required (VERSION 2.8)
+
+add_definitions(-DNUTMEG_DEBUG)
 
 if (MSVC)
   add_definitions(-D_CRT_SECURE_NO_WARNINGS)
-  link_directories (${nutmeg_SOURCE_DIR}/Engine/Library/Tokamak/vc)
   link_directories (${nutmeg_SOURCE_DIR}/Engine/Library/Newton/vc)
 else()
-  link_directories (${nutmeg_SOURCE_DIR}/linux_dep/tokamak_release/lib)
 endif()
 
 FIND_PACKAGE(OpenGL REQUIRED)
@@ -21,8 +21,6 @@ include_directories (
   Engine/CoreSrc/Audio
   Engine/CoreSrc/Scene
   Engine/CoreSrc/Physics
-  Engine/Library/Tokamak
-  Engine/Library/Tokamak/math
   Engine/Library/Newton
   Engine/Library/OpenGL
   Engine/Library/DevIL
@@ -33,7 +31,6 @@ include_directories (
   Engine/Subsystems/Audio
   Engine/Library/Squall
   Engine/Library/SDL
-  Samples/example
 )
 
 include (FindSDL)
@@ -70,7 +67,6 @@ set (NUTMEG_SOURCES
   Engine/CoreSrc/Math/MathCore.cpp
   Engine/CoreSrc/Physics/AbstractPhysics.cpp
   Engine/CoreSrc/Physics/PhysicsNewton.cpp
-  Engine/CoreSrc/Physics/PhysicsTokamak.cpp
   Engine/CoreSrc/Platform/AbstractPlatform.cpp
   Engine/CoreSrc/Platform/Input.cpp
   Engine/CoreSrc/Render/AbstractRender.cpp
@@ -102,13 +98,15 @@ set (NUTMEG_SOURCES
   Engine/Subsystems/Audio/AudioSquall.cpp
   Engine/Subsystems/Platform/PlatformBada.cpp
   Engine/Subsystems/Platform/PlatformSDL.cpp
-  Engine/Subsystems/Platform/PlatformWindows.cpp
-  Samples/example/main.cpp)
+  Engine/Subsystems/Platform/PlatformWindows.cpp)
 
 set_source_files_properties(${NUTMEG_SOURCES} PROPERTIES LANGUAGE CXX)
-add_executable (nutmeg_test WIN32 ${NUTMEG_SOURCES})
 
-TARGET_LINK_LIBRARIES(nutmeg_test ${OPENGL_gl_LIBRARY} tokamak newton)
+add_library (nutmeg_engine STATIC ${NUTMEG_SOURCES})
+add_executable (nutmeg_test Samples/example/main.cpp)
+
+TARGET_LINK_LIBRARIES(nutmeg_engine newton)
+TARGET_LINK_LIBRARIES(nutmeg_test ${OPENGL_gl_LIBRARY} nutmeg_engine)
 
 if (NOT SDL_FOUND)
   set (SDL_INCLUDE_DIR ${nutmeg_SOURCE_DIR}/Engine/Library/SDL)
@@ -122,8 +120,12 @@ if (SDL_FOUND)
   IF (MSVC)
     set_target_properties (nutmeg_test PROPERTIES LINK_FLAGS /nodefaultlib:msvcrt)
   ENDIF (MSVC)  
+
+  add_definitions (-DNUTMEG_PLATFORM_SDL)
 endif (SDL_FOUND)
 
 if (IL_FOUND)
   target_link_libraries (nutmeg_test ${IL_LIBRARIES} ${ILU_LIBRARIES} ${ILUT_LIBRARIES})
 endif (IL_FOUND)
+
+INSTALL(TARGETS nutmeg_test DESTINATION ${nutmeg_SOURCE_DIR}/Binary)
