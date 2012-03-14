@@ -196,23 +196,23 @@ namespace Nutmeg {
 	}
 
 	int PlatformSDL::getMouseX() const {
-        int x = 0; 
-        ::SDL_GetMouseState (&x, NULL); 
-		return x;
+	    int x = 0; 
+	    ::SDL_GetMouseState (&x, NULL); 
+	    return x;
 	}
 
 	int PlatformSDL::getMouseY() const {
-        int y = 0; 
-        ::SDL_GetMouseState (NULL, &y); 
-		return y; 
+	    int y = 0; 
+	    ::SDL_GetMouseState (NULL, &y); 
+	    return y; 
 	}
 
 	void PlatformSDL::setCursor(const char *file_name) {
 		cursor.load(file_name);
 	}
 
-    int PlatformSDL::getMouseDeltaX() const {
-        // TODO: implement later
+	int PlatformSDL::getMouseDeltaX() const {
+	    // TODO: implement later
 		return 0;
 	}
 
@@ -226,12 +226,12 @@ namespace Nutmeg {
 		return 0;
 	}
 
-    bool PlatformSDL::isMouseClip() const {
+	bool PlatformSDL::isMouseClip() const {
         // TODO: implement later
 		return false;
 	}
 
-    void PlatformSDL::setMouseGrab(bool state) {
+	void PlatformSDL::setMouseGrab(bool state) {
         // TODO: implement later
 	}
 
@@ -240,7 +240,7 @@ namespace Nutmeg {
 		return false;
 	}
 
-    bool PlatformSDL::isShowCursor() const {
+	bool PlatformSDL::isShowCursor() const {
         // TODO: implement later
 		return true;
 	}
@@ -258,12 +258,12 @@ namespace Nutmeg {
         // TODO: implement later
 	}
 
-    void PlatformSDL::setMouseClip(bool state) {
+	void PlatformSDL::setMouseClip(bool state) {
         // TODO: implement later
 	}
     
-    bool PlatformSDL::buttonHold(int button) const {
-		if (button < 0 || button >= BUTTON_COUNT) return false;
+	bool PlatformSDL::buttonHold(int button) const {
+	    if (button < 0 || button >= BUTTON_COUNT) return false;
         
         Uint8 buttons = ::SDL_GetMouseState (0, 0);
         int sdl_button = 0; 
@@ -279,11 +279,10 @@ namespace Nutmeg {
             break;
         }
 
-		return (buttons & SDL_BUTTON (sdl_button)) != 0;
+	return (buttons & SDL_BUTTON (sdl_button)) != 0;
 	}
     
-    int PlatformSDL::main(Application *application_, int argc, const char **argv) {
-
+	int PlatformSDL::main(Application *application_, int argc, const char **argv) {
 		try {
 
 			application = application_;
@@ -376,7 +375,7 @@ namespace Nutmeg {
         return fps.dt;
     }
 
-	float PlatformSDL::getTimer() {
+    float PlatformSDL::getTimer() {
         return static_cast<float>(SDL_GetTicks()) * 1000.0f;
     }
 
@@ -471,7 +470,7 @@ namespace Nutmeg {
     void PlatformSDL::message(const char *message, const char *caption) const {
         // TODO: think of something more elegant
         // just print it out for now
-		printf ("%s: %s\n", message, caption);
+	printf ("%s: %s\n", message, caption);
 	}
 
     void PlatformSDL::setTitle(const char *title) {
@@ -496,13 +495,20 @@ namespace Nutmeg {
 
         bool result = true; 
         while (::SDL_PollEvent (&event)) {
-            if (event.type == SDL_QUIT) {
-                result = false;
-            }
-        }
-        
-		return result;
+	    switch (event.type) {
+		case SDL_KEYDOWN:
+		    if (application && initialized)
+			application->onKeyDown(event.key.keysym.scancode);
+
+		    break;
+		case SDL_QUIT: 
+		    result = false;
+		    break;
+	    }
 	}
+
+	return result;
+    }
 
     void PlatformSDL::input() {
         // nothing here so far - pumping events should be enough to get access to internal SDL input state
@@ -510,7 +516,7 @@ namespace Nutmeg {
 
     void PlatformSDL::swap() {
         SDL_GL_SwapBuffers (); 
-	}
+    }
 }
 
 #ifndef NUTMEG_BUILD_DLL

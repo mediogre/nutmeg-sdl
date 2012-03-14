@@ -158,7 +158,7 @@ namespace Nutmeg {
 
 		void onKeyDown(int key) {
 			if (key == KEY_ENTER) {
-            	// scene->restore();
+			    scene->restore();
 			}
 		}
 
