@@ -200,7 +200,7 @@ namespace Nutmeg {
 		// texture manager
 		//----------------------------------------------------------------------
 
-		RenderTexture *texture = render->loadTexture(Str(getResourcePath()) + "Core/Textures/Checker.png");
+		RenderTexture *texture = render->loadTexture(Str(getResourcePath()) + "core/textures/checker.png");
 		texture_man = new ResourceMan <RenderTexture> (this, texture);
 		TextureRef::setManager(texture_man);
 
@@ -208,7 +208,7 @@ namespace Nutmeg {
 		// mesh manager
 		//----------------------------------------------------------------------
 
-		RenderMesh *mesh = render->loadMesh(Str(getResourcePath()) + "Core/Primitives/pBox.mesh");
+		RenderMesh *mesh = render->loadMesh(Str(getResourcePath()) + "core/primitives/pBox.mesh");
 		mesh_man = new ResourceMan <RenderMesh> (this, mesh);
 		MeshRef::setManager(mesh_man);
 
@@ -217,7 +217,7 @@ namespace Nutmeg {
 		//----------------------------------------------------------------------
 
 		//RenderFont *font = render->loadFont(Str(getResourcePath()) + "Core/Fonts/dos.xml_font");
-		RenderFont *font = render->loadFont(Str(getResourcePath()) + "Core/Fonts/fixed_sys.xml_font");
+		RenderFont *font = render->loadFont(Str(getResourcePath()) + "core/fonts/fixed_sys.xml_font");
 		font_man = new ResourceMan <RenderFont> (this, font);
 		FontRef::setManager(font_man);
 

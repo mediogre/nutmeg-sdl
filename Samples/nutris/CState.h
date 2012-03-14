@@ -1,7 +1,7 @@
 #ifndef CSTATE_H
 #define CSTATE_H
 
-#include "../../../Engine/CoreSrc/Nutmeg.h"
+#include "Nutmeg.h"
 
 
 class CState : public Nutmeg::Application, Nutmeg::SceneEventListener

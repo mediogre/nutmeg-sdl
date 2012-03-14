@@ -8,7 +8,7 @@ Game::Game(Nutmeg::Scene *scn)
 {
     scene = scn;
 
-    cube.load("Core/Primitives/pBox.mesh");
+    cube.load("core/primitives/pBox.mesh");
     trg_stock = scene->getNode("trig_stakan");
 
     Nutmeg::Material* mat;
@@ -16,7 +16,7 @@ Game::Game(Nutmeg::Scene *scn)
     for(int i=0; i<8; ++i)
     {
         mat = new Nutmeg::Material();
-        mat->diffuse.load( Nutmeg::format("Game/cube_%d.jpg", i) );
+        mat->diffuse.load( Nutmeg::format("game/cube_%d.jpg", i) );
         cube_mat[i] = scene->appendMaterial(mat);
     }
 

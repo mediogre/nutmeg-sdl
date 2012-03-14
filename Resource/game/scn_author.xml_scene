@@ -28,7 +28,7 @@
 			<children>
 				<node type="mesh" name="plane" material="0">
 					<transform pos="0.5 11 0" rot="-0.7071068 0 0 -0.7071068" scale="34 23 1"/>
-					<mesh>Core/Primitives/pPlane.mesh</mesh>
+					<mesh>core/primitives/pPlane.mesh</mesh>
 				</node>
 				<node type="particle_system" name="particle_system">
 					<transform pos="7.5 10.5 7.5" rot="0 0.08715574 0 -0.9961947" scale="6 1 1"/>

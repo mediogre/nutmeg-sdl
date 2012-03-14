@@ -7,6 +7,7 @@ if (MSVC)
   add_definitions(-D_CRT_SECURE_NO_WARNINGS)
   link_directories (${nutmeg_SOURCE_DIR}/Engine/Library/Newton/vc)
 else()
+  link_directories (${nutmeg_SOURCE_DIR}/Engine/Library/Newton/linux)
 endif()
 
 FIND_PACKAGE(OpenGL REQUIRED)
@@ -115,7 +116,7 @@ set(NUTRIS_SOURCES
 add_executable(nutris ${NUTRIS_SOURCES})
 
 
-TARGET_LINK_LIBRARIES(nutmeg_engine newton)
+TARGET_LINK_LIBRARIES(nutmeg_engine Newton pthread ${OPENGL_gl_LIBRARY})
 TARGET_LINK_LIBRARIES(nutmeg_test ${OPENGL_gl_LIBRARY} nutmeg_engine)
 TARGET_LINK_LIBRARIES(nutris ${OPENGL_gl_LIBRARY} nutmeg_engine)
 

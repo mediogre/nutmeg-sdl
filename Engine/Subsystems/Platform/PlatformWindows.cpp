@@ -1219,7 +1219,7 @@ namespace Nutmeg {
 		console->addMember("halt", &PlatformWindows::halt, this);
 		console->addMember("video", &PlatformWindows::commandVideo, this);
 		console->addMember("title", &PlatformWindows::setTitle, this);
-		setCursor("Core/Textures/cursor.png");
+		setCursor("core/textures/cursor.png");
 		updateCursor();
 	}
 

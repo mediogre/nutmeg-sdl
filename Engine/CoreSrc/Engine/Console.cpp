@@ -198,6 +198,7 @@ namespace Nutmeg {
 		vsprintf(text, fmt, ap);
 		va_end(ap);
 		history.append(new Record(text, vec3(0.3f, 0.8f, 0.3f)));
+        Log::message (text); 
 	}
 
 	//--------------------------------------------------------------------------
@@ -210,6 +211,7 @@ namespace Nutmeg {
 		va_end(ap);
 		history.append(new Record(text, vec3(0.8f, 0.8f, 0.3f)));
 		message(fmt);
+        Log::message (text); 
 		// this->setActive(true);
 	}
 
@@ -222,6 +224,7 @@ namespace Nutmeg {
 		vsprintf(text, fmt, ap);
 		va_end(ap);
 		history.append(new Record(text, vec3(0.8f, 0.3f, 0.3f)));
+        Log::message (text); 
 		this->setActive(true);
 	}
 
@@ -234,12 +237,14 @@ namespace Nutmeg {
 		vsprintf(text, fmt, ap);
 		va_end(ap);
 		history.append(new Record(text, vec3(0.3f, 0.8f, 0.3f)));
+        Log::message (text); 
 	}
 
 	//--------------------------------------------------------------------------
 
 	void Console::info(const char *text, const vec3 &color) {
 		history.append(new Record(text, color));
+        Log::message (text); 
 	}
 
 	//--------------------------------------------------------------------------
@@ -251,6 +256,7 @@ namespace Nutmeg {
 		vsprintf(text, fmt, ap);
 		va_end(ap);
 		messages.append(new Message(text));
+        Log::message (text); 
 	}
 
 	//--------------------------------------------------------------------------
@@ -515,8 +521,8 @@ namespace Nutmeg {
 		addVariable("console.alpha", &transparency);
 		addVariable("console.font_size", &fontSize);
 
-		font = render->loadFont(Str(resource_manager->getResourcePath()) + "Core/Fonts/fixed_sys.xml_font");
-		logo = render->loadTexture(Str(resource_manager->getResourcePath()) + "Core/Textures/nutmeg_logo.png");
+		font = render->loadFont(Str(resource_manager->getResourcePath()) + "core/fonts/fixed_sys.xml_font");
+		logo = render->loadTexture(Str(resource_manager->getResourcePath()) + "core/textures/nutmeg_logo.png");
 	}
 
 	//--------------------------------------------------------------------------

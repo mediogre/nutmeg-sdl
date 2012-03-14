@@ -55,19 +55,18 @@ namespace Nutmeg {
 
 			Log::open("template.log");
 
-			font.load("Core/Fonts/ms_sans_serif_8.xml_font");
+			font.load("core/fonts/ms_sans_serif_8.xml_font");
 			font->bind();
 
 			// platform->setVideoMode(VideoMode(1024, 768, 32), false);
 
 			// bump.load("hit1.wav");
 			texture.load("fire.png");
-			checker.load("Core/Editor/alpha2.jpg");
+			checker.load("core/editor/alpha2.jpg");
 
 			// scene
 			scene = new Scene(engine);
 			scene->init("Newton");
-			// scene->init ("Tokamak"); 
 			scene->load("compound.xml_scene");
 			scene->getPhysicsWorld().setCollisionCallback(collide, this);
 

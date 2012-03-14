@@ -44,15 +44,15 @@
 				</node>
 				<node type="mesh" name="but_exit" material="0">
 					<transform pos="2.5 2.5 -0.5"/>
-					<mesh>Core/Primitives/pBox.mesh</mesh>
+					<mesh>core/primitives/pBox.mesh</mesh>
 				</node>
 				<node type="mesh" name="but_about" material="2">
 					<transform pos="0 2.5 -0.5"/>
-					<mesh>Core/Primitives/pBox.mesh</mesh>
+					<mesh>core/primitives/pBox.mesh</mesh>
 				</node>
 				<node type="mesh" name="but_start" material="1">
 					<transform pos="-2.5 2.5 -0.5"/>
-					<mesh>Core/Primitives/pBox.mesh</mesh>
+					<mesh>core/primitives/pBox.mesh</mesh>
 				</node>
 			</children>
 		</node>

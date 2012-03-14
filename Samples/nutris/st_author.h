@@ -1,7 +1,7 @@
 #ifndef ST_AUTHOR_H_INCLUDED
 #define ST_AUTHOR_H_INCLUDED
 
-#include "../../../Engine/CoreSrc/Nutmeg.h"
+#include "Nutmeg.h"
 #include "CState.h"
 
 

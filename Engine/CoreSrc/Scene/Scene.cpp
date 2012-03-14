@@ -86,12 +86,12 @@ namespace Nutmeg {
 		physics = AbstractPhysics::createWorld(physics_name);
 		assert(physics != NULL);
 
-		primitives[1].load("Core/Primitives/pBox.mesh");
-		primitives[2].load("Core/Primitives/pSphere.mesh");
-		primitives[3].load("Core/Primitives/pCone.mesh");
-		primitives[4].load("Core/Primitives/pCapsuleSphere.mesh");
-		primitives[5].load("Core/Primitives/pCylinder.mesh");
-		primitives[6].load("Core/Primitives/pCapsuleCylinder.mesh");
+		primitives[1].load("core/primitives/pBox.mesh");
+		primitives[2].load("core/primitives/pSphere.mesh");
+		primitives[3].load("core/primitives/pCone.mesh");
+		primitives[4].load("core/primitives/pCapsuleSphere.mesh");
+		primitives[5].load("core/primitives/pCylinder.mesh");
+		primitives[6].load("core/primitives/pCapsuleCylinder.mesh");
 
 	}
 

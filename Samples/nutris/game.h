@@ -1,7 +1,7 @@
 ﻿#ifndef GAME_H_INCLUDED
 #define GAME_H_INCLUDED
 
-#include "../../../Engine/CoreSrc/Nutmeg.h"
+#include "Nutmeg.h"
 
 // типы фигур
 enum ShapeType { line = 0, square, rightL, leftL, pyramide, leftZ, rightZ };

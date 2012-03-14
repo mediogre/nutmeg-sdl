@@ -32,21 +32,23 @@ namespace Nutmeg {
 			AbstractPlatform::addImplementation("SDL", createPlatformSDL);
 		}
 
-		if (isAudioSquallSupported() == true) {
-			AbstractAudio::addImplementation("Squall", createAudioSquall);
-		}
+        if (isAudioSquallSupported() == true) {
+            AbstractAudio::addImplementation("Squall", createAudioSquall);
+        }
 
 		Engine engine;
 
 		engine.setSubsystemCoreId("SDL");
 		engine.setSubsystemRenderId("OpenGL1");
-		engine.setSubsystemAudioId("Squall");
+        engine.setSubsystemAudioId("Squall");
 
 		stmgr = new CStateManager(&engine);
         stmgr->registerState( game::STATE_MAINMENU, new ST_MainMenu(&engine) );
         stmgr->registerState( game::STATE_ABOUT, new ST_Author(&engine) );
         stmgr->registerState( game::STATE_GAME, new ST_Game(&engine) );
         stmgr->setNextState( game::STATE_MAINMENU );
+
+        Log::open("nutris.log");
 
 		return engine.execute(stmgr, argc, argv);
 	}
